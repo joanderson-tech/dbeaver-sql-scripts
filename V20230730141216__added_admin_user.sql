@@ -1,0 +1,17 @@
+INSERT INTO USUARIO (
+    PRIMEIRO_NOME,
+    ULTIMO_NOME,
+    EMAIL,
+    SENHA_ENCRIPITADA,
+    DATA_DE_CRIACAO,
+    ULTIMA_ATUALIZACAO,
+    PERFIL
+) VALUES (
+     'Admin',
+     'Admin',
+     'me@emersondantas.eti.br',
+     '$2a$10$08eFq8jF8sNV9H/E4GWU8.F3pMUeblos2rtJJUODZbP.tG3GnToHC',
+     CURRENT_TIMESTAMP,
+     CURRENT_TIMESTAMP,
+     'ADMIN'
+ );
