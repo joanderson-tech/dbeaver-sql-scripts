@@ -1,0 +1,64 @@
+--id_disc correto 1019860 / errado 1399388
+-- 02 script para unificar a MC
+select 'UPDATE ensino.matricula_componente SET id_discente = 1019860 WHERE id_matricula_componente IN (' || STRING_AGG(mc.id_matricula_componente::text, ', ') || ');' AS Solucao,
+	   'UPDATE ensino.matricula_componente SET id_discente = '|| mc.id_discente || ' WHERE id_matricula_componente IN (' || STRING_AGG(mc.id_matricula_componente::text, ', ') || ');' AS backup,
+	   COUNT(mc.id_matricula_componente) AS quantidade_ids
+from ensino.matricula_componente mc 
+where mc.id_discente IN (1399388)
+GROUP BY 
+    mc.id_discente;	
+   
+UPDATE ensino.matricula_componente SET id_discente = 1019860 WHERE id_matricula_componente IN (18426887, 18426888, 18426889, 18426890, 18426891, 18426892, 18879526, 18879527, 18879528, 18879529, 18879530, 18010169, 18010171, 18010173, 18010174, 18010170, 18010172, 18879531);
+   
+-- 03 FREQUENCIA
+
+SELECT 
+    'UPDATE ensino.frequencia_aluno SET id_discente = 1019860 WHERE id_frequencia IN (' || STRING_AGG(fa.id_frequencia::text, ', ') || ');' AS script,
+    'UPDATE ensino.frequencia_aluno SET id_discente = ' || fa.id_discente || ' WHERE id_frequencia IN (' || STRING_AGG(fa.id_frequencia::text, ', ') || ');' AS backup,
+    COUNT(fa.id_frequencia) AS quantidade_ids
+FROM 
+    ensino.frequencia_aluno fa 
+WHERE 
+    fa.id_discente IN (1399388)
+GROUP BY 
+    fa.id_discente;	
+   
+begin;   
+rollback;
+   
+UPDATE ensino.matricula_componente SET id_discente = 1019860 WHERE id_matricula_componente IN (18426887, 18426888, 18426889, 18426890, 18426891, 18426892, 18879526, 18879527, 18879528, 18879529, 18879530, 18010169, 18010171, 18010173, 18010174, 18010170, 18010172, 18879531);
+   
+UPDATE ensino.frequencia_aluno SET id_discente = 1019860 WHERE id_frequencia IN (167896391, 167896472, 167896529, 154413728, 154444770, 154445470, 154445738, 154446581, 154447698, 154448207, 154448741, 154448905, 154448960, 154449035, 154449069, 154448995, 154449161, 154449361, 154449297, 154768317, 154768397, 154768686, 155096364, 157665014, 155490718, 155490621, 155490936, 155491087, 155491265, 155491375, 155491727, 155491846, 155491938, 155492107, 155492205, 155492369, 155492519, 155492635, 155492948, 155493725, 155493539, 155604943, 155737264, 156045996, 156046652, 156320471, 156513918, 156860586, 156974922, 157223987, 157224188, 157224433, 157224665, 155096148, 157225839, 155096507, 157878384, 157878400, 158037804, 158037843, 158060125, 158218510, 158218764, 158570304, 158569550, 158569766, 158569902, 158570109, 162162052, 162162068, 162162084, 162162100, 158848366, 158848383, 162236439, 162236652, 159237483, 159237529, 159237546, 159237563, 157554116, 159408243, 159408327, 159638856, 159639395, 159639549, 159904565, 159904175, 159905136, 160234083, 160234157, 162589885, 162590148, 162590238, 162590393, 160615821, 160616315, 160616031, 160616595, 160939482, 161000987, 161001267, 161296141, 161363589, 161876536, 161876552, 161876568, 161876584, 161876600, 163191435, 163193633, 163193507, 163193710, 163193805, 163193975, 163194036, 163194078, 168230453, 168230507, 168230554, 168230627, 168230917, 163316328, 163439303, 163439436, 163621407, 163621350, 163763552, 163763583, 163869642, 163869750, 164233075, 164233252, 164233391, 164233543, 164336123, 164664065, 164664082, 164664099, 168558172, 168558482, 168558613, 165026484, 165026558, 165026940, 165027180, 165229350, 165229507, 165341823, 165698068, 165698105, 165698240, 165698276, 165870532, 165870601, 168779902, 168780129, 168780485, 165990990, 166089414, 166224434, 168986817, 166922948, 166923014, 166923094, 166923497, 166923586, 169030556, 169030573, 167127238, 167127291, 167366332, 167366349, 167366366, 167481090, 167481544, 167563416, 169458855, 169458667, 169458799, 169458752, 169458872, 169733313, 169733366, 169733239, 169792144, 170030806, 170029787, 170398869, 170398886, 170398852, 170524882, 170525394, 170724252, 171379994, 171380025, 171380069, 171380100, 171590961, 171745169, 172094484, 172094521, 172094537, 172094609, 172094647, 172094554, 172094571, 172094685, 172094744, 172134104, 172458497, 172458514, 172458531, 172458548, 172458565, 172652882, 172652927, 172652944, 172863799, 172952038, 173526436, 173526785, 173526869, 173526984, 173527183, 173527333, 173527413, 173765806, 173765822, 174086678, 174086694, 174086710, 174086726);
+     
+UPDATE basico.matricula_estudante_serie SET id_estudante=1019860 WHERE id_matricula_discente_serie in (1493714,1544792);
+
+UPDATE matricula.renovacao_matricula SET id_discente=1019860 WHERE id_renovacao_matricula=72053199;
+
+UPDATE ensino.abono_frequencia SET id_estudante=1019860 WHERE id_abono_frequencia=51946;
+
+UPDATE basico.usuario_familiar SET id_discente_medio=1019860 WHERE id_usuario_familiar=71975950;
+
+DELETE FROM basico.estudante WHERE id_estudante=1399388;
+
+DELETE FROM public.discente WHERE id_discente=1399388;
+
+DELETE FROM comum.pessoa WHERE id_pessoa=770027; 
+
+ --Backup
+UPDATE ensino.matricula_componente SET id_discente = 1399388 WHERE id_matricula_componente IN (18426887, 18426888, 18426889, 18426890, 18426891, 18426892, 18879526, 18879527, 18879528, 18879529, 18879530, 18010169, 18010171, 18010173, 18010174, 18010170, 18010172, 18879531);
+
+UPDATE ensino.frequencia_aluno SET id_discente = 1399388 WHERE id_frequencia IN (167896391, 167896472, 167896529, 154413728, 154444770, 154445470, 154445738, 154446581, 154447698, 154448207, 154448741, 154448905, 154448960, 154449035, 154449069, 154448995, 154449161, 154449361, 154449297, 154768317, 154768397, 154768686, 155096364, 157665014, 155490718, 155490621, 155490936, 155491087, 155491265, 155491375, 155491727, 155491846, 155491938, 155492107, 155492205, 155492369, 155492519, 155492635, 155492948, 155493725, 155493539, 155604943, 155737264, 156045996, 156046652, 156320471, 156513918, 156860586, 156974922, 157223987, 157224188, 157224433, 157224665, 155096148, 157225839, 155096507, 157878384, 157878400, 158037804, 158037843, 158060125, 158218510, 158218764, 158570304, 158569550, 158569766, 158569902, 158570109, 162162052, 162162068, 162162084, 162162100, 158848366, 158848383, 162236439, 162236652, 159237483, 159237529, 159237546, 159237563, 157554116, 159408243, 159408327, 159638856, 159639395, 159639549, 159904565, 159904175, 159905136, 160234083, 160234157, 162589885, 162590148, 162590238, 162590393, 160615821, 160616315, 160616031, 160616595, 160939482, 161000987, 161001267, 161296141, 161363589, 161876536, 161876552, 161876568, 161876584, 161876600, 163191435, 163193633, 163193507, 163193710, 163193805, 163193975, 163194036, 163194078, 168230453, 168230507, 168230554, 168230627, 168230917, 163316328, 163439303, 163439436, 163621407, 163621350, 163763552, 163763583, 163869642, 163869750, 164233075, 164233252, 164233391, 164233543, 164336123, 164664065, 164664082, 164664099, 168558172, 168558482, 168558613, 165026484, 165026558, 165026940, 165027180, 165229350, 165229507, 165341823, 165698068, 165698105, 165698240, 165698276, 165870532, 165870601, 168779902, 168780129, 168780485, 165990990, 166089414, 166224434, 168986817, 166922948, 166923014, 166923094, 166923497, 166923586, 169030556, 169030573, 167127238, 167127291, 167366332, 167366349, 167366366, 167481090, 167481544, 167563416, 169458855, 169458667, 169458799, 169458752, 169458872, 169733313, 169733366, 169733239, 169792144, 170030806, 170029787, 170398869, 170398886, 170398852, 170524882, 170525394, 170724252, 171379994, 171380025, 171380069, 171380100, 171590961, 171745169, 172094484, 172094521, 172094537, 172094609, 172094647, 172094554, 172094571, 172094685, 172094744, 172134104, 172458497, 172458514, 172458531, 172458548, 172458565, 172652882, 172652927, 172652944, 172863799, 172952038, 173526436, 173526785, 173526869, 173526984, 173527183, 173527333, 173527413, 173765806, 173765822, 174086678, 174086694, 174086710, 174086726);
+
+UPDATE basico.matricula_estudante_serie SET id_estudante=1399388 WHERE id_matricula_discente_serie=1493714, 1544792;
+
+UPDATE matricula.renovacao_matricula SET id_discente=1399388 WHERE id_renovacao_matricula=72053199;
+
+INSERT INTO basico.estudante (id_estudante, id_serie_ingresso, escola_anterior, data_matricula, id_opcao_turno, participa_bolsa_familia, utiliza_transporte_escolar_publico, data_atualizacao, id_registro_atualizacao, codigo_inep, participa_escotismo, participa_tributo_crianca, id_tipo_instituicao_origem) VALUES(1399388, 51869714, '', NULL, NULL, true, true, '2024-09-26', 6741053, NULL, false, false, NULL);
+
+INSERT INTO public.discente (id_discente, ano_ingresso, periodo_ingresso, matricula, observacao, id_pessoa, id_gestora_academica, nivel, status, matricula_temp, id_forma_ingresso, ch_integralizada, prazo_conclusao, data_colacao_grau, codmergpa, id_curso, id_curriculo, formando, matricula_antiga, tipo, id_foto, id_perfil, data_cadastro, id_pessoa_transferencia, id_registro_entrada, nivel_antigo, id_curso_antigo, periodo_atual, id_historico_digital, matricula_sem_digito, alterado_cadastrado) VALUES(1399388, 2024, NULL, '202430048583', NULL, 770027, NULL, 'B', 1, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, '2024-01-26 13:12:15.458', NULL, 6272821, NULL, NULL, NULL, NULL, NULL, NULL);
+
+INSERT INTO comum.pessoa (id_pessoa, nome, data_nascimento, sexo, id_raca, id_endereco_residencial, id_endereco_contato, passaporte, id_grau_formacao, abreviatura, cpf_cnpj, id_pais_nacionalidade, id_tipo_etnia, nome_pai, nome_mae, email, id_estado_civil, bairro, id_uf_naturalidade, id_municipio_naturalidade, numero, tipo, valido, ultima_atualizacao, endereco, id_conta_bancaria, numero_certificado_militar, serie_certificado_militar, categoria_certificado_militar, orgao_expedicao_certificado_militar, data_expedicao_certificado_militar, numero_identidade, orgao_expedicao_identidade, id_unidade_federativa_identidade, data_expedicao_identidade, numero_titulo_eleitor, zona_titulo_eleitor, secao_titulo_eleitor, data_expedicao_titulo_eleitor, id_unidade_federativa_titulo_eleitor, id_uf_identidade, id_uf_titulo_eleitor, id_uf_certificado_militar, codigo_area_nacional_telefone_celular, codigo_area_nacional_telefone_fixo, origem, telefone_fixo, telefone_celular, fax, data_cadastro, nome_ascii, id_tipo_rg, tipo_sanguineo, pais_nacionalidade, estrangeiro, certidao_civil_tipo, certidao_civil_modelo, certidao_civil_num_termo, certidao_civil_num_folha, certidao_civil_num_livro, certidao_civil_data, certidao_civil_id_municipio_cartorio, certidao_civil_cartorio, certidao_civil_matricula_nova, cod_educacenso, complemento, codigo_rh, nome_responsavel_matricula, grau_parentesco_responsavel_matricula, tipo_documento_responsavel_matricula, numero_documento_responsavel_matricula, cep, codigo_rh_old, id_municipio_contato, id_uf_contato, id_pessoa_restauracao, profissaopai, profissaomae, codigo_unificado, id_pessoa_unificada, id_orgao_emissor_identidade, codigo_nis, certidao_civil_cartorio_codigo_inep, "semCpf", justificativa, id_bairro_endereco, id_tipo_documento_militar, id_tipo_militar, documento_militar, semcpf, municipio_ext, uf_naturalidade_ext, codigo_inep, id_escolaridade, codigo_sus, id_informacoes_medicas, endereco_atual, bairro_atual, cep_atual, id_dados_pessoa_censo, email_alternativo, pis_pasep, numero_identidade_mae, numero_identidade_pai, orgao_expedicao_identidade_mae, orgao_expedicao_identidade_pai, data_expedicao_identidade_mae, data_expedicao_identidade_pai, id_uf_identidade_mae, id_uf_identidade_pai, id_localizacao_zona, possui_laudo, telefone_celular2, telefone_celular3, contato_celular, contato_celular2, contato_celular3, id_tipo_tamanho_camisa, id_tamanho_camisa_letra, tamanho_camisa_livre, id_tipo_tamanho_short_calca, id_tamanho_short_calca_letra, tamanho_short_calca_livre, tamanho_calcado, id_tipo_tamanho_calca, id_tamanho_calca_letra, tamanho_calca_livre, nome_social, quilombola, cid) VALUES(770027, 'ELOA RODRIGUES DE SOUZA', '2019-08-28', 'F', 2, NULL, NULL, NULL, NULL, NULL, 16674098400, 31, NULL, 'RONNY MATHEUS SOUZA', 'TAMIRES QUEZIA ALVES RODRIGUES', '', NULL, 'AREA RURAL DE PETROLINA', 26, 2611101, '', 'F', false, '2024-05-27 10:42:10.144', 'ÁREA RURAL', NULL, '', '', '', '', NULL, '', '', 26, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '(87)9919-8795', NULL, '2024-01-26 13:12:15.457', 'ELOA RODRIGUES DE SOUZA', NULL, NULL, 'BRASILEIRA', false, '0', 'N', '', '', '', NULL, 2611101, '', '07674501552019100419298020645819', NULL, '', NULL, 'TAMIRES QUEZIA ALVES RODRIGUES', '', 'CPF', '11335889485', '56334-899', NULL, 2611101, 26, NULL, 'AGRICULTOR', 'AGRICULTORA', NULL, NULL, NULL, '21374110715', NULL, false, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '214405174871', NULL, '16674098400', 61537929, NULL, NULL, NULL, NULL, NULL, NULL, '10288709', '10858823', 'SDS', '', NULL, NULL, 26, 26, NULL, false, '', '', 'MÃE', '', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, false, NULL);
+
+
+ 
+ 

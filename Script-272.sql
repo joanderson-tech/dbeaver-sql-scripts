@@ -1,0 +1,1 @@
+select * from comum.permissao p  where p.id_usuario = 105128; 

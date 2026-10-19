@@ -1,0 +1,22 @@
+SELECT * FROM comum.pessoa p WHERE p.id_pessoa IN (52055020, 52066173);
+
+SELECT * FROM discente d WHERE d.matricula  = '202052066173'; 
+
+SELECT * FROM discente d WHERE d.id_pessoa IN (52055020, 52066173);
+
+SELECT * FROM basico.matricula_estudante_serie mes WHERE mes.id_estudante IN (1004811,1009746);
+
+
+-- IASMIM VITORIA FELIX DA SILVA NOGUEIRA 	idpessoa 52055020 - matricula 202052055020 -- discente 1004811
+-- MARIA LUCIA BARBOSA DA SILVA 						idpessoa 52066173 - matricula 202052066173 -- discente 1009746
+
+
+
+BEGIN;
+
+UPDATE comum.pessoa SET nome='MARIA LUCIA BARBOSA DA SILVA', data_nascimento='2011-06-29', sexo='F', id_raca=1, id_endereco_residencial=NULL, id_endereco_contato=NULL, passaporte=NULL, id_grau_formacao=NULL, abreviatura=NULL, cpf_cnpj=11247966496, id_pais_nacionalidade=31, id_tipo_etnia=NULL, nome_pai='ALEXSANDRO DA SILVA', nome_mae='JANAINA BARBOSA', email='', id_estado_civil=NULL, bairro='ALUIZIO CAMPOS', id_uf_naturalidade=25, id_municipio_naturalidade=2504009, numero='SN', tipo='F', valido=true, ultima_atualizacao='2025-07-04 10:14:06.556', endereco='RUA DESEMBARGADOR DOUTOR MIGUEL LEVINO DE OLIVEIRA RAMOS', id_conta_bancaria=NULL, numero_certificado_militar='', serie_certificado_militar='', categoria_certificado_militar='', orgao_expedicao_certificado_militar='', data_expedicao_certificado_militar=NULL, numero_identidade='4543174', orgao_expedicao_identidade='SESDS-PB', id_unidade_federativa_identidade=25, data_expedicao_identidade='2018-07-27', numero_titulo_eleitor=NULL, zona_titulo_eleitor=NULL, secao_titulo_eleitor=NULL, data_expedicao_titulo_eleitor=NULL, id_unidade_federativa_titulo_eleitor=NULL, id_uf_identidade=NULL, id_uf_titulo_eleitor=NULL, id_uf_certificado_militar=NULL, codigo_area_nacional_telefone_celular=NULL, codigo_area_nacional_telefone_fixo=NULL, origem=NULL, telefone_fixo='', telefone_celular='(83)99869-2084', fax=NULL, data_cadastro='2021-03-26 00:00:00.000', nome_ascii='MARIA LUCIA BARBOSA DA SILVA', id_tipo_rg=NULL, tipo_sanguineo=NULL, pais_nacionalidade='BRASILEIRO', estrangeiro=false, certidao_civil_tipo='0', certidao_civil_modelo='N', certidao_civil_num_termo='', certidao_civil_num_folha='', certidao_civil_num_livro='', certidao_civil_data=NULL, certidao_civil_id_municipio_cartorio=2500106, certidao_civil_cartorio='', certidao_civil_matricula_nova='06905401552011100127008010301914', cod_educacenso=NULL, complemento='', codigo_rh=NULL, nome_responsavel_matricula='JANAINA BARBOSA', grau_parentesco_responsavel_matricula='MÃE', tipo_documento_responsavel_matricula=NULL, numero_documento_responsavel_matricula='0', cep='58412-100', codigo_rh_old=NULL, id_municipio_contato=2504009, id_uf_contato=25, id_pessoa_restauracao=NULL, profissaopai='', profissaomae='', codigo_unificado=NULL, id_pessoa_unificada=NULL, id_orgao_emissor_identidade=NULL, codigo_nis='', certidao_civil_cartorio_codigo_inep=NULL, "semCpf"=false, justificativa=NULL, id_bairro_endereco=NULL, id_tipo_documento_militar=NULL, id_tipo_militar=NULL, documento_militar=NULL, semcpf=NULL, municipio_ext=NULL, uf_naturalidade_ext=NULL, codigo_inep='130156784695', id_escolaridade=NULL, codigo_sus='', id_informacoes_medicas=71498225, endereco_atual=NULL, bairro_atual=NULL, cep_atual=NULL, id_dados_pessoa_censo=NULL, email_alternativo=NULL, pis_pasep=NULL, numero_identidade_mae='', numero_identidade_pai='', orgao_expedicao_identidade_mae='', orgao_expedicao_identidade_pai='', data_expedicao_identidade_mae=NULL, data_expedicao_identidade_pai=NULL, id_uf_identidade_mae=25, id_uf_identidade_pai=25, id_localizacao_zona=NULL, possui_laudo=false, telefone_celular2='', telefone_celular3='', contato_celular='', contato_celular2='', contato_celular3='', id_tipo_tamanho_camisa=1, id_tamanho_camisa_letra=NULL, tamanho_camisa_livre='', id_tipo_tamanho_short_calca=1, id_tamanho_short_calca_letra=NULL, tamanho_short_calca_livre='', tamanho_calcado='', id_tipo_tamanho_calca=NULL, id_tamanho_calca_letra=NULL, tamanho_calca_livre=NULL, nome_social=NULL, quilombola=false, cid='', cpf_filiacao_1=0, cpf_filiacao_2=0, id_tamanho_camisa_predefinido=NULL, id_tamanho_short_calca_predefinido=NULL, id_grau_parentesco_responsavel_matricula=1, id_povo_indigena=NULL, id_foto_reconhecimento_facial=NULL, codigo_familia=NULL, data_nascimento_filiacao_1=NULL, data_nascimento_filiacao_2=NULL, data_nascimento_responsavel=NULL WHERE id_pessoa=52066173;
+UPDATE public.discente 	SET id_pessoa=52055020	WHERE id_discente=1004811; 52066173
+
+
+COMMIT;
+

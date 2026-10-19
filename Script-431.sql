@@ -1,0 +1,1 @@
+select m.nao_optou, * from ensino.matricula_componente m;

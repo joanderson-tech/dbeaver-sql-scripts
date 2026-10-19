@@ -1,0 +1,3 @@
+SELECT *
+FROM discente d
+WHERE d.matricula IN ('21338198744' , '202430120336');

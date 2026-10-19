@@ -1,0 +1,1 @@
+select * FROM escola.caracterizacao_infraestrutura ;

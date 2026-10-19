@@ -1,0 +1,24 @@
+select * from escola.configuracao_escola ce
+where ce.bloqueia_transferencia_estudante_menu_matricula = true ;
+	
+begin;
+rollback;
+end
+commit;
+
+	
+	
+ALTER TABLE escola.configuracao_escola
+ADD COLUMN bloqueia_transferencia_estudante_menu_matricula BOOLEAN DEFAULT FALSE,
+ADD COLUMN bloqueia_transferencia_estudante_menu_estudante BOOLEAN DEFAULT FALSE;
+
+ALTER TABLE escola.configuracao_escola
+DROP COLUMN bloqueia_transferencia_estudante_menu_matricula,
+DROP COLUMN bloqueia_transferencia_estudante_menu_estudante;
+
+UPDATE escola.configuracao_escola
+SET id_escola=52232895, permite_ofertar_vaga_componente=false, ceja=false, prioridade_militar_processamento=false, gestao_turmas_sem_matriculas=false, exige_matricula_faixa_etaria=true, cadastra_estudante_sem_controle_vaga=NULL, id_tipo_militar_prioridade=NULL, centro_educacional_especial=false, centro_formacao_virtual=false, porcentagem_vagas_militares=NULL, data_limite_vagas_militares=NULL, centro_educacao_ensino_superior=false, bloqueia_acesso_novos_estudantes=false, bloqueia_transferencia_estudante_menu_matricula=false, bloqueia_transferencia_estudante_menu_estudante=false
+WHERE id_configuracao_escola=52340830;
+
+ALTER TABLE escola.configuracao_escola ALTER COLUMN permite_transferencia_estudante_menu_matricula SET NOT NULL;
+ALTER TABLE escola.configuracao_escola ALTER COLUMN permite_transferencia_estudante_menu_estudante SET NOT NULL;

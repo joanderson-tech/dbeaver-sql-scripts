@@ -1,0 +1,30 @@
+WITH EscolasContagem AS ( SELECT DISTINCT e.id_escola
+FROM escola.escola e
+JOIN escola.escola_etapa_ensino_serie eees ON
+e.id_escola = eees.id_escola
+JOIN basico.serie s ON
+eees.id_serie = s.id_serie
+JOIN basico.etapa_ensino ee ON
+s.id_etapa_ensino = ee.id_etapa_ensino
+JOIN basico.matricula_estudante_serie mes ON
+eees.id_escola_etapa_ensino_serie = mes.id_serie_escola
+JOIN basico.situacao_matricula_serie sms ON
+mes.id_situacao_matricula_serie = sms.id_situacao_matricula_serie
+WHERE mes.id_situacao_matricula_serie IN ( 2, 3, 7, 8, 10, 13,-1, 4 )
+AND mes.ano_calendario = 2026 ) SELECT DISTINCT e.nome AS escola, ee.denominacao AS etapa_ensino, s.descricao AS serie, sum(CASE WHEN mes.id_situacao_matricula_serie = 2 THEN 1 ELSE 0 END) AS APROVADO, sum(CASE WHEN mes.id_situacao_matricula_serie = 3 THEN 1 ELSE 0 END) AS REPROVADO, sum(CASE WHEN mes.id_situacao_matricula_serie = 7 THEN 1 ELSE 0 END) AS PROGRESSAO_PARCIAL, sum(CASE WHEN mes.id_situacao_matricula_serie = 8 THEN 1 ELSE 0 END) AS REPR_FREQUENCIA, sum(CASE WHEN mes.id_situacao_matricula_serie = 10 THEN 1 ELSE 0 END) AS APENAS_PROG_PARCIAL, sum(CASE WHEN mes.id_situacao_matricula_serie = 13 THEN 1 ELSE 0 END) AS SUPRIDO, sum(CASE WHEN mes.id_situacao_matricula_serie = -1 THEN 1 ELSE 0 END) AS SEM_MOVIMENTACAO, sum(CASE WHEN mes.id_situacao_matricula_serie = 4 THEN 1 ELSE 0 END) AS DEIXOU_DE_FREQUENTAR, count(mes.id_estudante) AS total ,(SELECT COUNT(*)
+FROM EscolasContagem) AS totalEscola
+FROM escola.escola e
+JOIN escola.escola_etapa_ensino_serie eees ON
+e.id_escola = eees.id_escola
+JOIN basico.serie s ON
+eees.id_serie = s.id_serie
+JOIN basico.etapa_ensino ee ON
+s.id_etapa_ensino = ee.id_etapa_ensino
+JOIN basico.matricula_estudante_serie mes ON
+eees.id_escola_etapa_ensino_serie = mes.id_serie_escola
+JOIN basico.situacao_matricula_serie sms ON
+mes.id_situacao_matricula_serie = sms.id_situacao_matricula_serie
+WHERE mes.id_situacao_matricula_serie IN ( 2, 3, 7, 8, 10, 13,-1, 4 )
+AND mes.ano_calendario = 2026
+GROUP BY (e.nome, ee.denominacao, s.descricao)
+ORDER BY e.nome;

@@ -1,0 +1,1 @@
+select * from comum.pessoa p where p.id_pessoa in (52765357, 52800876);

@@ -1,0 +1,1 @@
+SELECT * FROM rh.servidor s WHERE s.id_servidor IN (54386368,1734);

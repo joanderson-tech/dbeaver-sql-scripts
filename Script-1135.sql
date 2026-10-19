@@ -1,0 +1,1 @@
+ select * from public.backup_educ_660 be ;

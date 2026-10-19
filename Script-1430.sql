@@ -1,0 +1,1 @@
+SELECT * FROM comum.dados_institucionais di   ;

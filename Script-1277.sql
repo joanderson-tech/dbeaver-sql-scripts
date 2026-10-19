@@ -1,0 +1,1 @@
+SELECT  * FROM ensino_infantil.configuracao_relatorio cr WHERE cr.id_configuracao_relatorio IN (1,4,3);

@@ -1,0 +1,12 @@
+select 
+        u.login 
+    from comum.usuario u 
+    join comum.pessoa p on p.id_pessoa = u.id_pessoa 
+    join rh.servidor s on s.id_pessoa = p.id_pessoa 
+    join ensino.docente_turma dt on dt.id_docente = s.id_servidor 
+    join ensino.turma t on t.id_turma = dt.id_turma 
+    where dt.ativo;
+    
+   select * from comum.papel p where p.id = 7024;
+   
+  ALTER TABLE pessoas.configuracao_atualizacao_servidor ADD periodo_final timestamp NULL;

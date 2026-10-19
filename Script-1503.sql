@@ -1,0 +1,1 @@
+SELECT * FROM matricula.tipo_documento_matricula; WHERE id_tipo_documento_matricula = 7;

@@ -1,0 +1,1 @@
+select * from  ensino.horario_turma WHERE id_turma in (688617, 688614, 688613, 688621, 688620, 688619, 688615, 688616, 688618)

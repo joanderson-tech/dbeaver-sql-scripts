@@ -1,0 +1,1 @@
+SELECT p.codigo_rh, * FROM comum.pessoa p WHERE  p.nome = 'JOSE LUCAS FREITAS DA SILVA'

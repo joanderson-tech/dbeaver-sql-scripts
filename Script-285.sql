@@ -1,0 +1,1 @@
+select * from comum.pessoa p where p.nome = 'RYKALHANNY PEREIRA DA SILVA';

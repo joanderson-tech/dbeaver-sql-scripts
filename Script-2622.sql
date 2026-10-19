@@ -1,0 +1,1 @@
+SELECT * FROM ensino.docente_turma dt WHERE dt.id_docente = 291;

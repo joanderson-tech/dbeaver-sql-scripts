@@ -1,0 +1,1 @@
+SELECT * FROM matricula.estudante_inscrito WHERE nome_mae  ILIKE '%JOSEFA LIMA%'

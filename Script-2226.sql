@@ -1,0 +1,1 @@
+SELECT * FROM basico.curriculo_basico cb WHERE cb.codigo = '7INT'

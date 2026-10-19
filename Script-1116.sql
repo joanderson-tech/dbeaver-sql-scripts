@@ -1,0 +1,1 @@
+select * from ava.aula_extra ae where id= 83330183;

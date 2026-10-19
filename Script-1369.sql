@@ -1,0 +1,1 @@
+SELECT * FROM basico.curriculo_basico cb WHERE ativo AND cb.ano_entrada_vigor = 2025;--cb.codigo = '%EJAMA 2025%'

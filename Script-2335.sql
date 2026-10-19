@@ -1,0 +1,1 @@
+UPDATE ensino.turma	SET id_turma_agrupadora=686530	WHERE id_turma IN (686713, 686714, 686715, 686716, 686717, 686718, 686719, 686720);

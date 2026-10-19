@@ -1,0 +1,1 @@
+SELECT * FROM ensino_infantil.configuracao_relatorio cr; 

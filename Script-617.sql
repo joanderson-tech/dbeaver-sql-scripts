@@ -1,0 +1,1 @@
+select p.cpf* from comum.pessoa p 

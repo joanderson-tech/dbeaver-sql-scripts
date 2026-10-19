@@ -1,0 +1,1 @@
+SELECT * FROM comum.parametro WHERE valor ILIKE '%testes%'

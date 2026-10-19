@@ -1,0 +1,1 @@
+select * from ensino_infantil.configuracao_relatorio cr; where cr.id_configuracao_relatorio = 12;

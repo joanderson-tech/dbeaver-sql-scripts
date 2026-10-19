@@ -1,0 +1,1 @@
+SELECT * FROM comum.usuario u WHERE u.id_usuario = 1;

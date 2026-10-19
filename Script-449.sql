@@ -1,0 +1,1 @@
+select * from basico.turma_serie ts;

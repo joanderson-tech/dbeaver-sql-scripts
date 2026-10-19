@@ -1,0 +1,1 @@
+SELECT * FROM comum.papel p WHERE p.id_subsistema = 3;

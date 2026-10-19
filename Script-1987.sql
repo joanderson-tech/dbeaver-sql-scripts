@@ -1,0 +1,1 @@
+SELECT * FROM ava.avaliacao_nota_frequencia anf ;

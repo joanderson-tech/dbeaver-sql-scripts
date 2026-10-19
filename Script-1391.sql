@@ -1,0 +1,1 @@
+SELECT * FROM basico.curriculo_basico cb WHERE cb.codigo IN ('EIN1INT' , 'EIN2INT' , 'EIN3INT' , 'EIN4INT')

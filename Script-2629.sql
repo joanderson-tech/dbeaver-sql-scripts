@@ -1,0 +1,1 @@
+DELETE FROM comum.pessoa WHERE id_pessoa=749078;

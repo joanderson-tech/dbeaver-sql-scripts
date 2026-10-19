@@ -1,0 +1,1 @@
+ALTER TABLE basico.serie ADD COLUMN qtd_assistente_educacional integer NOT NULL DEFAULT 0;

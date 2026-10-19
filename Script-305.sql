@@ -1,0 +1,1 @@
+select * from comum.pessoa p where p.certidao_civil_matricula_nova = '07674501552016100364056018971640';

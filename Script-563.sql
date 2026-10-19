@@ -1,0 +1,1 @@
+select * from ensino.turma t where t.id_turma_serie = 55638498 and id_disciplina = 604;

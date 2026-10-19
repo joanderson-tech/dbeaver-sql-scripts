@@ -1,0 +1,1 @@
+select * from ensino.horario_turma ht WHERE ht.id_turma=739884;

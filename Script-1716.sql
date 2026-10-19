@@ -1,0 +1,1 @@
+SELECT codigo  FROM comum.parametro WHERE nome ILIKE '%OCULTA_CPF_RESPONSAVEL_E_FILIACAO%'

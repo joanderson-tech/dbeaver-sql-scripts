@@ -1,0 +1,1 @@
+SELECT * FROM provas.prova p ;

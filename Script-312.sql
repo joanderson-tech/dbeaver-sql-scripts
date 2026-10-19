@@ -1,0 +1,1 @@
+select * from comum.parametro p where codigo ='2_10100_8';

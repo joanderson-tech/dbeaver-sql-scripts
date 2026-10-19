@@ -1,0 +1,1 @@
+SELECT * FROM public.scripts_restore sr WHERE sr.ativo ;

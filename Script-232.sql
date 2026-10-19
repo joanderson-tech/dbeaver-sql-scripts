@@ -1,0 +1,2 @@
+INSERT INTO comum.papel (id, id_sistema, id_subsistema, descricao, restrito, exige_unidade, nome, tipo_autorizacao, tempo_alteracao_senha, sql_filtro_unidades)
+VALUES(305, 2, 3, 'RESPONSAVEL_GENEROS_ALIMENTICIOS', false, true, 'RESPONSÁVEL GÊNEROS ALIMENTÍCIOS', 1, NULL, NULL);

@@ -1,0 +1,14 @@
+ALTER TABLE basico.calendario_escolar ADD COLUMN IF NOT EXISTS regime_letivo char(1) DEFAULT 'B';
+ALTER TABLE basico.calendario_escolar DROP CONSTRAINT IF EXISTS ck_regime_letivo;
+ALTER TABLE basico.calendario_escolar ADD CONSTRAINT ck_regime_letivo CHECK(regime_letivo IN ('B', 'T'));
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS inicio_tri_1 DATE;
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS fim_tri_1 DATE;
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS inicio_tri_2 DATE;
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS fim_tri_2 DATE;
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS inicio_tri_3 DATE;
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS fim_tri_3 DATE;
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS regime_letivo char(1) DEFAULT 'B';
+ALTER TABLE diario.extensao_calendario_escolar DROP CONSTRAINT IF EXISTS ck_regime_letivo;
+ALTER TABLE diario.extensao_calendario_escolar ADD CONSTRAINT ck_regime_letivo CHECK(regime_letivo IN ('B', 'T'));
+ALTER TABLE diario.extensao_calendario_escolar ADD COLUMN IF NOT EXISTS utiliza_regime_semestral BOOLEAN DEFAULT TRUE;
+ALTER TABLE basico.calendario_escolar ADD COLUMN IF NOT EXISTS utiliza_regime_semestral BOOLEAN DEFAULT TRUE;

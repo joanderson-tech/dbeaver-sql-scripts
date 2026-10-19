@@ -1,0 +1,17 @@
+BEGIN;
+DROP TABLE quartz.job_agendado;
+DROP TABLE quartz.job_execucao;
+DROP TABLE quartz.qrtz_calendars;
+DROP TABLE quartz.qrtz_fired_triggers;
+DROP TABLE quartz.qrtz_job_details;
+DROP TABLE quartz.qrtz_locks;
+DROP TABLE quartz.qrtz_paused_trigger_grps;
+DROP TABLE quartz.qrtz_scheduler_state;
+DROP TABLE quartz.qrtz_triggers;
+DROP TABLE quartz.qrtz_blob_triggers;
+DROP TABLE quartz.qrtz_cron_triggers;
+DROP TABLE quartz.qrtz_simple_triggers;
+DROP TABLE quartz.qrtz_simprop_triggers;
+DROP SEQUENCE quartz.job_agendado_seq;
+DROP SCHEMA quartz;
+COMMIT;

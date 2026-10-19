@@ -1,0 +1,7 @@
+UPDATE rh.cargo SET acesso_reduzido_portal_professor = TRUE
+WHERE id_cargo IN (2919, 2925, 2900, 2931, 2933, 2942, 2923, 2932, 2921, 2908, 2897, 2929, 2913, 2927, 2910, 2930, 2926, 2928, 2922, 2888, 2911);
+
+
+BEGIN;
+
+ROLLBACK;

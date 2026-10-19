@@ -1,0 +1,1 @@
+select * FROM comum.parametro WHERE codigo='2_10100_47';

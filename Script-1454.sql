@@ -1,0 +1,1 @@
+SELECT codigo, nome, valor FROM comum.parametro; WHERE codigo =

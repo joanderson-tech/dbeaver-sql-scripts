@@ -1,0 +1,3 @@
+UPDATE ensino.docente_turma
+SET ativo=false
+WHERE id_docente_turma in (55221071, 55221296, 55221549, 55221550, 55221803, 55222533, 55222534, 55222535);

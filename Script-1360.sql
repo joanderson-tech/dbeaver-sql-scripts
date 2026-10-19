@@ -1,0 +1,1 @@
+SELECT * FROM basico.curriculo_basico cb WHERE cb.id_curriculo_basico = 83942924;

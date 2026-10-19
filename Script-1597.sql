@@ -1,0 +1,1 @@
+SELECT * FROM matricula.vaga_serie WHERE id_vaga_serie=51934731;

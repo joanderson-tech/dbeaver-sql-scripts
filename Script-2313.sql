@@ -1,0 +1,7 @@
+BEGIN;
+
+
+DELETE FROM comum.pessoa WHERE id_pessoa=749314;
+UPDATE comum.pessoa	SET nome_mae='MAYRA FONSECA RODRIGUES DA SILVA',endereco='RUA PROF. ANTÔNIO CORCINO DE MACEDO',celular='(84)99907-1428'	WHERE id_pessoa=749479;
+
+COMMIT;

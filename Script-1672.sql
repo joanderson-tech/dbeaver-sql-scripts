@@ -1,0 +1,1 @@
+select * from basico.etapa_ensino ee where ee.id_etapa_ensino = 51942989;

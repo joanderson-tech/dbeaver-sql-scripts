@@ -1,0 +1,1 @@
+ac.etapa,ac.turno,ac.serie,ac.disciplina as disciplina, ac.turma,

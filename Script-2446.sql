@@ -1,0 +1,22 @@
+DELETE FROM ensino.turma WHERE id_turma IN ( 829889, 829890, 829891, 829892, 829893, 829894, 829895, 829896, 829897, 829898);
+
+
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829897;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829898;
+UPDATE ensino.turma SET id_turma_agrupadora = 826314 WHERE id_turma = 826315;
+UPDATE ensino.turma SET id_turma_agrupadora = 826314 WHERE id_turma = 826316;
+UPDATE ensino.turma SET id_turma_agrupadora = 826314 WHERE id_turma = 826317;
+UPDATE ensino.turma SET id_turma_agrupadora = 826314 WHERE id_turma = 826318;
+UPDATE ensino.turma SET id_turma_agrupadora = 826314 WHERE id_turma = 826319;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829893;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829894;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829895;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829896;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829889;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829890;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829891;
+UPDATE ensino.turma SET id_turma_agrupadora = NULL WHERE id_turma = 829892;
+
+
+
+DELETE from ensino.matricula_componente where id_matricula_componente IN ( 20969628,20969629,20969630,20969631,20969638,20969639,20969640,20969641,20969648,20969649,20969650,20969651,20969658,20969659,20969660,20969661,20969668,20969669,20969670,20969671,20969678,20969679,20969680,20969681,20969688,20969689,20969690,20969691,20969698,20969699,20969700,20969701,20969708,20969709,20969710,20969711,20969718,20969719,20969720,20969721,20969728,20969729,20969730,20969731,20969738,20969739,20969740,20969741,20969748,20969749,20969750,20969751,20969758,20969759,20969760,20969761,20969768,20969769,20969770,20969771,20969778,20969779,20969780,20969781);

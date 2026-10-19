@@ -1,0 +1,1 @@
+SELECT * FROM comum.sistema WHERE id = 17;

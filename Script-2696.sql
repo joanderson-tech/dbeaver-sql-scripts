@@ -1,0 +1,1 @@
+SELECT * FROM rh.servidor s WHERE s.id_pessoa = 51873686;

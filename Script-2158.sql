@@ -1,0 +1,43 @@
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490744;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490745;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490746;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490747;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490748;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490749;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490750;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490751;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490752;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490753;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490754;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490755;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490756;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490757;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490758;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490759;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490760;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490761;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490762;
+UPDATE ensino.horario_turma SET data_inicio = NULL, data_fim = NULL WHERE id_horario_turma = 1490763;
+
+
+
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490704;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490705;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490706;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490707;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490708;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490709;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490710;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490711;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490712;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490713;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490714;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490715;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490716;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490717;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490718;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490719;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490720;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490721;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490722;
+UPDATE ensino.horario_turma SET data_inicio = '2026-03-18', data_fim = '2026-03-18' WHERE id_horario_turma = 1490723;

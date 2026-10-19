@@ -1,0 +1,1 @@
+SELECT * FROM ensino.turma t WHERE t.id_disciplina = 293 AND ano = 2025;

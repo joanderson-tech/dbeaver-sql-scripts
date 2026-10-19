@@ -1,0 +1,30 @@
+SELECT * 
+INTO vagaSerie
+FROM (
+    SELECT 
+        vs.*,
+        ROW_NUMBER() OVER (
+            PARTITION BY id_serie, id_escola, ano_letivo, id_turno 
+            ORDER BY 
+                (CASE WHEN numero_vagas > 0 THEN 0 ELSE 1 END) ASC, 
+                id_vaga_serie ASC                                 
+        ) as rnk
+    FROM matricula.vaga_serie vs
+    WHERE id_escola IN (747, 736) --736, 747
+      AND ano_letivo = 2026
+) sub
+WHERE rnk > 1; 
+
+
+-- Geração de script SQL para backup dos DELETEs das novas matrículas componentes (sub-turmas)
+SELECT  'UPDATE matricula.vaga_serie 	SET removida=true 	WHERE id_vaga_serie IN ( ' || string_agg(id_vaga_serie::TEXT,',') || ');' AS solução, 
+				'UPDATE matricula.vaga_serie 	SET removida=false 	WHERE id_vaga_serie IN ( ' || string_agg(id_vaga_serie::TEXT,',') || ');' AS backup 
+FROM vagaSerie;
+
+
+
+
+BEGIN;
+UPDATE matricula.vaga_serie 	SET removida=true 	WHERE id_vaga_serie IN ( 52769525,52769498,52769527,52769500,52769521,52769522,52769523,52769504,52769515,52769516,52769687,52769717,52769718,52769720,52769739,52769767,52769737,52769765,52769710,52769766,52769740,52769768,52769735,52769771,52769705,52769769,52769736,52769772,52769723,52769721,52769722,52769724,52769731,52769755,52769729,52769753,52769730,52769754,52769732,52769756,52769529,52769530,52769747,52769763,52769745,52769761,52769746,52769762,52769748,52769764,52769743,52769759,52769741,52769757,52769742,52769758,52769744,52769760,52769727,52769751,52769725,52769749,52769726,52769750,52769728,52769752);
+
+COMMIT;

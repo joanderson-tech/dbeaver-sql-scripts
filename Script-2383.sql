@@ -1,0 +1,1 @@
+ALTER TABLE diario.limite_lancamento_notas ADD COLUMN IF NOT EXISTS bloquear_dias_futuros boolean DEFAULT false;

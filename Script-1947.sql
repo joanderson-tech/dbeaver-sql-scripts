@@ -1,0 +1,1 @@
+SELECT * FROM ambiente.tipo_ambiente_unidade_escolar taue  ;

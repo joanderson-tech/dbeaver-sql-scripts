@@ -1,0 +1,1 @@
+UPDATE matricula.estudante_inscrito_opcao_escola SET cpf_irmao=16540116497, id_pessoa_irmao=52796509, filiacao_1_irmao='ANA PAULA PEREIRA DA SILVA', nome_irmao='CASSIO VICTOR PEREIRA DA SILVA' WHERE id_estudante_inscrito_opcao_escola=95144261;

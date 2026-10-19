@@ -1,0 +1,37 @@
+CREATE TABLE dados_pibic (
+    id SERIAL PRIMARY KEY,
+    carimbo TIMESTAMP,
+    gosto_lista INT,
+    gosto_assistir INT,
+    encaixa_preferencia INT,
+    favoritos INT,
+    recomendo INT,
+    divirto INT,
+    experiencia_agradavel INT,
+    utilidade INT,
+    feliz INT,
+    melhores_escolhas INT,
+    relaxar INT,
+    encontrar_melhores INT,
+    variedade_diferente INT,
+    variedade_alta INT,
+    variedade_nao_semelhante INT,
+    gostei_conteudos INT,
+    decisao_sensata INT,
+    boa_experiencia INT,
+    encantado INT,
+    satisfeito INT,
+    sexo VARCHAR(20),
+    idade INT,
+    estado_civil VARCHAR(50),
+    regiao VARCHAR(50),
+    renda VARCHAR(100),
+    escolaridade VARCHAR(100),
+    frequencia_netflix VARCHAR(50),
+    tempo_assinante VARCHAR(50),
+    qtd_conteudos VARCHAR(50),
+    tipo_conta VARCHAR(100)
+);
+
+
+select * from dados_pibic;

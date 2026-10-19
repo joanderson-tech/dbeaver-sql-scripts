@@ -1,0 +1,1 @@
+SELECT * FROM comum.configuracao_cliente;

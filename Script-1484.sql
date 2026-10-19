@@ -1,0 +1,1 @@
+ select * from  basico.escola_curriculo;

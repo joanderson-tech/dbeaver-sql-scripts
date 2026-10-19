@@ -1,0 +1,50 @@
+BEGIN;
+
+
+INSERT INTO ensino.matricula_componente (id_situacao_matricula, id_discente, id_matricula_componente, id_turma, id_registro_cadastro, data_cadastro, ano, id_componente_curricular, id_matricula_estudante_serie, periodo) SELECT 2, mat.id_estudante, nextval('ensino.matricula_componente_seq'), t.id_turma, NULL, now(), ano, t.id_disciplina, mat.id_matricula_discente_serie, t.periodo
+FROM basico.matricula_estudante_serie mat, ensino.turma t
+INNER JOIN ensino.componente_curricular c ON
+c.id_componente_curricular = t.id_disciplina
+WHERE t.id_turma_serie = 52357098
+AND id_matricula_discente_serie IN ( 1325807, 1325917, 1325700, 1325789, 1325784, 1325785, 1325716, 1325689, 1325693, 1325701, 1325803, 1325791, 1325797, 1325718, 1325707, 1325715, 1325714, 1325786 )
+AND c.id_tipo_componente != 6
+AND t.id_situacao_turma <> 4
+AND (t.id_disciplina = 220
+	OR t.id_disciplina IN ( SELECT cbc.id_componente_curricular
+FROM basico.curriculo_basico cb
+JOIN basico.curriculo_basico_componente cbc ON
+	cbc.id_curriculo_basico = cb.id_curriculo_basico
+JOIN basico.turma_serie ts ON
+	ts.id_turma_serie = 52357098
+WHERE cb.ativo
+	AND cbc.permite_alocacao_adjunto
+	AND ts.id_curriculo_medio = cb.id_curriculo_basico ))
+AND NOT EXISTS( SELECT * FROM ensino.matricula_componente WHERE mat.id_estudante = id_discente AND id_situacao_matricula IN ( 5, 6, 2, 8 ) AND id_turma = t.id_turma );
+
+UPDATE basico.matricula_estudante_serie
+SET
+id_turma_serie = 52357098, id_situacao_matricula_serie = 1, id_curriculo_medio = 52357089, id_serie_escola = ( SELECT eees.id_escola_etapa_ensino_serie
+FROM escola.escola_etapa_ensino_serie eees
+WHERE eees.id_serie = 1005339
+AND eees.id_escola = 3124
+AND eees.ativo
+LIMIT 1 )
+WHERE id_matricula_discente_serie IN ( 1325807, 1325917, 1325700, 1325789, 1325784, 1325785, 1325716, 1325689, 1325693, 1325701, 1325803, 1325791, 1325797, 1325718, 1325707, 1325715, 1325714, 1325786 );
+
+
+
+ROLLBACK;
+
+
+SELECT *
+FROM matricula.vaga_serie vs 
+WHERE id_escola = 3124
+AND id_serie = 1005339
+AND id_turno = 2
+AND ano_letivo= 2026;
+
+-- Auto-generated SQL script #202602041732
+UPDATE matricula.vaga_serie
+	SET vagas_ocupadas=0,vagas_solicitadas=0,vagas_efetivadas=0, vagas_validadas = 21
+	WHERE id_vaga_serie=52346689;
+

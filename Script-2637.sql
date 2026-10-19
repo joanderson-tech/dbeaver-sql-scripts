@@ -1,0 +1,1 @@
+SELECT * FROM comum.parametro p WHERE p.nome = 'ACESSO_PORTAL_PROFESSOR_EDUC21'

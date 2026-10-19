@@ -1,0 +1,1 @@
+SELECT * FROM matricula.solicitacao_transferencia st WHERE st.id_matricula_discente_serie = 1515401;

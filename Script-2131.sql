@@ -1,0 +1,2 @@
+SELECT * FROM comum.pessoa WHERE cpf_cnpj = '69400091591';
+69400091591

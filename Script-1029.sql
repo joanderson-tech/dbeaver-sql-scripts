@@ -1,0 +1,1 @@
+select * from basico.curriculo_basico where codigo in ('4PN','5PN');

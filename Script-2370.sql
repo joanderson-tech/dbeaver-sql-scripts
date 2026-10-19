@@ -1,0 +1,38 @@
+BEGIN;
+
+--==== BACKUP ====--
+SELECT
+'UPDATE basico.curriculo_basico SET tipo_diario=' || cb.tipo_diario ||' WHERE id_curriculo_basico in (' || string_agg(cb.id_curriculo_basico::text, ', ')  || ');' as BACKUP_CB
+FROM basico.curriculo_basico cb
+WHERE cb.id_curriculo_basico IN (53598367, 53598382, 53598452, 53598442)
+GROUP BY cb.tipo_diario;
+
+
+UPDATE basico.curriculo_basico SET tipo_diario=1 WHERE id_curriculo_basico in (53598367);
+UPDATE basico.curriculo_basico SET tipo_diario=31 WHERE id_curriculo_basico in (53598452, 53598442);
+UPDATE basico.curriculo_basico SET tipo_diario=34 WHERE id_curriculo_basico in (53598382);
+
+
+UPDATE basico.turma_serie SET tipo_diario=1 WHERE id_turma_serie in (53553842);
+UPDATE basico.turma_serie SET tipo_diario=31 WHERE id_turma_serie in (53572201, 53478819, 53598217, 53449160, 53780099, 53449176, 53548537, 53545627, 53546679, 53598554, 53630746, 53458808, 53458809, 53460696, 53460702, 53546681, 53711374, 53630784, 53658200, 53658201, 53653174, 53653175, 53699271, 53656805, 53656806, 53590241, 53548578, 53548579, 53545069, 53552815, 53630839, 53449184, 53699272, 53711375, 53449227, 53630745, 53460737, 53478816, 53479407, 53479409, 53479410, 53479654, 53479705, 53480099, 53480100, 53480914, 53480915, 53480916, 53480917, 53491649, 53491650, 53491651, 53491652, 53510401, 53511034, 53520964, 53520966, 53521004, 53545071, 53545630, 53545642, 53545643, 53545711, 53545714, 53545715, 53545795, 53546513, 53546523, 53546561, 53546582, 53546674, 53546675, 53546887, 53548524, 53548533, 53548539, 53548540, 53548549, 53548556, 53548557, 53548558, 53548562, 53548563, 53548565, 53548566, 53548576, 53548590, 53548595, 53548596, 53548597, 53548601, 53548602, 53550370, 53550375, 53550377, 53550386, 53550406, 53572186, 53574360, 53590243);
+UPDATE basico.turma_serie SET tipo_diario=34 WHERE id_turma_serie in (53553843, 53553844, 53553845);
+
+
+
+SELECT
+'UPDATE basico.turma_serie SET tipo_diario='|| ts.tipo_diario ||' WHERE id_turma_serie in (' || string_agg(ts.id_turma_serie::text, ', ') || ');' as BACKUP_TS
+FROM basico.turma_serie ts 
+WHERE ts.id_curriculo_medio IN (53598367, 53598382, 53598452, 53598442)
+GROUP BY ts.tipo_diario;
+
+--==== SOLUÇÃO ====--
+UPDATE basico.curriculo_basico
+SET tipo_diario=1
+WHERE id_curriculo_basico in (53598367, 53598382, 53598452, 53598442);
+
+UPDATE basico.turma_serie
+SET tipo_diario=1
+WHERE id_curriculo_medio in (53598367, 53598382, 53598452, 53598442);
+
+
+COMMIT;

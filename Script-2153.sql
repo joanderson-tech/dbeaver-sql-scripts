@@ -1,0 +1,1 @@
+SELECT * FROM basico.curriculo_basico cb WHERE cb.ano_entrada_vigor = 2026 AND cb.id_turno = 518761640; cb.codigo = '1ºanoINT'; '2ºanoINT'

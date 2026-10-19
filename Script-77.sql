@@ -1,0 +1,1 @@
+select * from matricula.tipo_ocupacao_vaga 

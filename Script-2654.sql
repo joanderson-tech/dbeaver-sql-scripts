@@ -1,0 +1,1 @@
+SELECT * FROM diario.campo_configuracao_conteudo_ministrado ;

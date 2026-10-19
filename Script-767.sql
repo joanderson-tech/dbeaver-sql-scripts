@@ -1,0 +1,132 @@
+UPDATE ensino.horario_turma SET ativo=true WHERE id_horario_turma in (1409234, 1409232, 1409233, 1409230);
+
+select*-- string_agg(id_horario_turma ::varchar, ', ') 
+from ensino.horario_turma where id_turma  in (685842, 685843, 685844, 685845, 685846, 685847, 685848, 685849, 685850) and ativo; = false;
+
+
+-- Turmas 'EFAFV7A OK'EFAFM6A OK'  'EFAFM6B 2025-05-22' 'EFAFM6C 2025-05-22'  'EFAFM9B 2025-05-22' 'EFAFM7A 2025-05-22'
+--'EFAFM7B 2025-05-22' 'EFAFV8A 2025-03-25' 'EFAFM8C 2025-05-22'
+
+/*
+select string_agg(id_turma ::varchar, ', ') 
+from ensino.turma where codigo = 'EFAFM9A' and ano = 2025;
+*/
+
+select *  --string_agg(id_turma ::varchar, ', ') 
+from ensino.turma where codigo = 'EFAIM4A' and ano = 2025 and id_disciplina = 220;
+
+select * --string_agg(id_frequencia  ::varchar, ', ')  
+from ensino.frequencia_aluno fa where fa.id_turma= 685732  and ativo = FALSE; and "data"  ate '2025-04-28'
+
+select * --string_agg(id_frequencia  ::varchar, ', ')  
+from ensino.frequencia_turma ft   where ft.id_turma= 685703; and ativo = false;
+--FORAM ATIVOS E TODOS FORAM PREENCHIDOS
+--FORAM ATIVOS OS RESGISTROS QUE TINHA E ALGUMAS DATAS NÃO TEM REGISTRO 
+--FICARAM SO 2 DIAS SEM LANCHAMENTO POIS NÃO TINHA NO BANCO
+
+--Updated Rows	275
+-- FFERNANDO EDUARDO BORGES DA SILVA 8º Ano - EFAFM8B / MATUTINO FORAM ATIVOS E TODOS FORAM PREENCHIDOS 
+UPDATE ensino.frequencia_aluno
+	SET ativo=true
+	WHERE id_frequencia in (138820184, 138882702, 138911938, 138926350, 138836204, 138882552, 138882627, 138882752, 138907645, 138907783, 138907815, 138820174, 138882742, 138911928, 138926340, 138836194, 138882542, 138882617, 138882692, 138907635, 138907773, 138907805, 138820178, 138882746, 138911932, 138926344, 138836198, 138882546, 138882621, 138882696, 138907639, 138907777, 138907809, 138820180, 138882748, 138911934, 138926346, 138836200, 138882548, 138882623, 138882698, 138907641, 138907779, 138907811, 138820181, 138882699, 138882749, 138911935, 138926347, 138836201, 138882549, 138882624, 138907642, 138907780, 138907812, 138820182, 138882700, 138911936, 138926348, 138836202, 138882550, 138882625, 138882750, 138907643, 138907781, 138907813, 138820183, 138882701, 138911937, 138926349, 138836203, 138882551, 138882626, 138882751, 138907644, 138907782, 138907814, 138820185, 138882703, 138911939, 138926351, 138836205, 138882553, 138882628, 138882753, 138907646, 138907784, 138907816, 138820192, 138836212, 138882710, 138907823, 138911946, 138926358, 138882560, 138882635, 138882760, 138907653, 138907791, 138820193, 138836213, 138882711, 138907824, 138911947, 138926359, 138882561, 138882636, 138882761, 138907654, 138907792, 138820196, 138836216, 138882714, 138907827, 138911950, 138882564, 138882639, 138882764, 138907657, 138907795, 138926362, 138820179, 138882747, 138911933, 138926345, 138836199, 138882547, 138882622, 138882697, 138907640, 138907778, 138907810, 138820194, 138836214, 138882712, 138907825, 138911948, 138926360, 138882562, 138882637, 138882762, 138907655, 138907793, 138820195, 138836215, 138882713, 138907826, 138911949, 138882563, 138882638, 138882763, 138907656, 138907794, 138926361, 138820190, 138836210, 138882708, 138911944, 138926356, 138882558, 138882633, 138882758, 138907651, 138907789, 138907821, 138820186, 138836206, 138882704, 138911940, 138926352, 138882554, 138882629, 138882754, 138907647, 138907785, 138907817, 138820188, 138836208, 138882706, 138911942, 138926354, 138882556, 138882631, 138882756, 138907649, 138907787, 138907819, 138820175, 138882743, 138911929, 138926341, 138836195, 138882543, 138882618, 138882693, 138907636, 138907774, 138907806, 138820176, 138882744, 138911930, 138926342, 138836196, 138882544, 138882619, 138882694, 138907637, 138907775, 138907807, 138820172, 138836192, 138882540, 138882740, 138907633, 138907771, 138911926, 138926338, 138882615, 138882690, 138907803, 138820173, 138836193, 138882541, 138882741, 138911927, 138926339, 138882616, 138882691, 138907634, 138907772, 138907804, 138820177, 138882745, 138911931, 138926343, 138836197, 138882545, 138882620, 138882695, 138907638, 138907776, 138907808, 138820191, 138836211, 138882709, 138911945, 138926357, 138882559, 138882634, 138882759, 138907652, 138907790, 138907822, 138820187, 138836207, 138882705, 138911941, 138926353, 138882555, 138882630, 138882755, 138907648, 138907786, 138907818, 138820189, 138836209, 138882707, 138911943, 138926355, 138882557, 138882632, 138882757, 138907650, 138907788, 138907820);
+
+
+select fa.id_frequencia 
+from ensino.frequencia_aluno fa
+join ensino.turma t on t.id_turma = fa.id_turma 
+where not fa.ativo
+    and fa.id_turma in (721932)
+    and not exists (select 1 from ensino.frequencia_aluno fa2 where fa2.data = fa.data and fa2.id_discente = fa.id_discente and fa2.id_turma = fa.id_turma and fa2.ativo);
+
+SELECT string_agg(id_frequencia::varchar, ', ')  
+FROM ensino.frequencia_aluno fa
+WHERE fa.id_turma = 685745
+  AND ativo = false
+  AND "data" <= '2025-04-25';
+
+SELECT string_agg(id_frequencia::varchar, ', ')  
+FROM ensino.frequencia_aluno fa
+WHERE fa.id_turma = 685732
+  AND ativo = false
+  AND "data" NOT IN ( '2025-02-26','2025-05-14')
+ -- AND "data" <= '2025-06-10';
+
+
+-- EFAFM9B  TEVE FREQUECIA LANÇADA ATE DIA 28 2025-05-08
+
+begin;
+commit;
+
+rollback;
+
+
+
+select p.nome,
+        u.login 
+    from comum.usuario u 
+    join comum.pessoa p on p.id_pessoa = u.id_pessoa 
+    join rh.servidor s on s.id_pessoa = p.id_pessoa 
+    join ensino.docente_turma dt on dt.id_docente = s.id_servidor 
+    join ensino.turma t on t.id_turma = dt.id_turma 
+    where dt.ativo  AND p.nome ILIKE '%FERNANDO EDUARDO BORGES DA SILVA%'
+
+
+select
+	to_char(f.data, 'YYYY-MM-DD') as data_aula
+from
+	ensino.frequencia_aluno f
+join ensino.turma t on
+	t.id_turma = f.id_turma
+join basico.turma_serie ts on
+	ts.id_turma_serie = t.id_turma_serie
+join basico.matricula_estudante_serie mes on
+	mes.id_turma_serie = ts.id_turma_serie
+	and mes.id_estudante = f.id_discente
+	--and mes.id_situacao_matricula_serie in ( 2, 3, 1, 7, 8, 10, 6 )
+where
+	f.ativo = true
+	and f.id_turma = 685680
+group by
+	data_aula
+order by
+	data_aula;
+
+
+
+
+
+
+
+
+
+SELECT * --string_agg(id_frequencia::varchar, ', ')  
+FROM ensino.frequencia_aluno fa
+WHERE fa.id_turma = 685736
+  AND ativo = false
+  AND "data" <= '2025-04-24';
+
+
+
+
+
+SELECT string_agg(id_frequencia::varchar, ', ')  
+FROM ensino.frequencia_aluno fa
+WHERE fa.id_turma = 685684
+  AND ativo = false
+  AND "data" = '2025-02-27'
+  and data_cadastro  in ('2025-02-27 00:00:00.000' )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

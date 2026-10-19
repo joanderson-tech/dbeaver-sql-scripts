@@ -1,0 +1,4 @@
+SELECT * FROM diario.campo_configuracao_conteudo_ministrado;
+
+
+ALTER TABLE diario.campo_configuracao_conteudo_ministrado diario.campo_configuracao_conteudo_ministrado

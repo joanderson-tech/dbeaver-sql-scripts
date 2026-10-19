@@ -1,0 +1,1 @@
+SELECT * FROM ensino_infantil.configuracao_relatorio cr WHERE cr.id_curriculo_basico  IN (51905241);

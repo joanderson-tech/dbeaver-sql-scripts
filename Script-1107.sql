@@ -1,0 +1,1 @@
+select * from comum.parametro p where p.nome ilike 'EMITE_RELATORIOS_ACOMPANHAMENTO'

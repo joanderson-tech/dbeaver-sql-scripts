@@ -1,0 +1,18 @@
+ALTER DATABASE portalsigeduc_sigeduc_cloud_esig_demonstracao RENAME TO portalsigeduc_desenv_esig_demonstracao;
+
+ALTER DATABASE portalsigeduc_sigeduc_cloud_esig_demonstracao_comum RENAME TO portalsigeduc_desenv_esig_demonstracao_comum;
+
+
+
+--backup
+ALTER DATABASE portalsigeduc_desenv_esig_demonstracao RENAME TO portalsigeduc_sigeduc_cloud_esig_demonstracao;
+
+ALTER DATABASE portalsigeduc_desenv_esig_demonstracao_comum RENAME TO portalsigeduc_sigeduc_cloud_esig_demonstracao_comum;
+
+SELECT pg_terminate_backend(pid)
+FROM pg_stat_activity
+WHERE datname IN ( 'portalsigeduc_desenv_esig_demonstracao_comum', 'portalsigeduc_desenv_esig_demonstracao')
+AND pid <> pg_backend_pid();
+
+
+

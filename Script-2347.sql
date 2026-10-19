@@ -1,0 +1,1 @@
+SELECT * FROM comum.municipio m WHERE m.nome = 'SAO MIGUEL DO GOSTOSO' --2503001

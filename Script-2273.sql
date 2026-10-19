@@ -1,0 +1,1 @@
+SELECT * FROM scripts_restore sr where ativo;

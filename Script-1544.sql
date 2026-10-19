@@ -1,0 +1,56 @@
+
+SELECT * FROM ensino.horario_turma ht WHERE ht.id_turma = 685427;
+
+SELECT * FROM ensino.turma t WHERE t.id_turma_serie  = 52008905;
+
+BEGIN;
+
+ROLLBACK;
+
+--DROP TABLE IF EXISTS dataHorario;
+
+SELECT *
+INTO TEMP dataHorario
+FROM ensino.horario_turma ht
+WHERE ht.id_turma = 685427
+AND ht.ativo = FALSE;
+
+-- Backup Matrícula Componente
+SELECT 'UPDATE ensino.horario_turma SET ' ||
+    'data_inicio = ' || COALESCE('''' || h.data_inicio || '''', 'NULL') || ', ' ||
+    'data_fim = ' || COALESCE('''' || h.data_fim || '''', 'NULL') || 
+    --'dia = ' || COALESCE('''' || h.dia || '''', 'NULL') || ', ' ||
+    --'data_alteracao = ' || COALESCE('''' || h.data_alteracao || '''', 'NULL') ||
+    ' WHERE id_horario_turma = ' || h.id_horario_turma || ';' AS backup_script
+FROM dataHorario h;
+
+--ATUALIZA 
+UPDATE ensino.horario_turma AS ht
+SET data_inicio = '2025-01-21', data_fim = '2025-04-23'
+FROM dataHorario dh
+WHERE ht.id_horario_turma = dh.id_horario_turma;
+
+
+UPDATE ensino.horario_turma SET data_inicio = '2025-04-11', data_fim = '2025-04-23' WHERE id_horario_turma = 1406404;
+UPDATE ensino.horario_turma SET data_inicio = '2025-04-11', data_fim = '2025-04-23' WHERE id_horario_turma = 1406400;
+UPDATE ensino.horario_turma SET data_inicio = '2025-04-11', data_fim = '2025-04-23' WHERE id_horario_turma = 1406410;
+UPDATE ensino.horario_turma SET data_inicio = '2025-04-11', data_fim = '2025-04-23' WHERE id_horario_turma = 1406416;
+UPDATE ensino.horario_turma SET data_inicio = '2025-04-11', data_fim = '2025-04-23' WHERE id_horario_turma = 1406421;
+
+SELECT 'UPDATE ensino.frequencia_aluno 	SET ativo=false	WHERE id_frequencia = ' || .id_frequencia || ';' AS solução, 
+FROM mudarDiaFrequencia h
+where h.existe_conflito IS NOT true;
+
+SELECT 'UPDATE ensino.frequencia_aluno 	SET ativo=false	WHERE id_frequencia IN ( ' || string_agg(fa.id_frequencia::TEXT,',') || ');' AS solução, 
+			 'UPDATE ensino.frequencia_aluno 	SET ativo=true WHERE id_frequencia IN ( ' || string_agg(fa.id_frequencia::TEXT,',') || ');' AS backup
+FROM ensino.frequencia_aluno fa
+WHERE fa.id_turma = 685427
+AND fa.DATA IN ('2025-02-13', '2025-02-14', '2025-06-30')
+AND fa.ativo;
+
+
+UPDATE ensino.frequencia_aluno 	SET ativo=false	WHERE id_frequencia IN ( 138214993,138214994,138214995,138214996,138214997,138214998,138214999,138215000,138215001,138215002,138215003,138215004,138215005,138215006,138215007,138215008,138215009,138215010,138215011,138215012,138215013,138215014,138215015,138215016,138215017,138215018,138291856,138291857,138291858,138291859,138291860,138291861,138291862,138291863,138291864,138291865,138291866,138291867,138291868,138291869,138291870,138291871,138291872,138291873,138291874,138291875,138291876,138291877,138291878,138291879,138291880,138291881,138291882,138291883,138291884,138291885,138291886,138291887,138291888,138291889,138291890,138291891,138291892,138291893,138291894,138291895,138291896,138291897,138291898,138291899,138291900,138291901,138291902,138291903,138291904,138291905,138291906,138291907);
+
+
+
+COMMIT;

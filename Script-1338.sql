@@ -1,0 +1,1 @@
+INSERT INTO comum.parametro (nome, descricao, valor, id_sistema, codigo, tempo_maximo, tipo, bloquear_alteracao)  VALUES('NOME_RELATORIO_FINAL_POLIVALENTE', 'Define qual nome será exibido na funcionalidade de relatório final em turmas polivalentes por nota', 'Relatórios', 2, 'diario.nomeRelatorioFinalPolivalente', 0, 12, false) on conflict do nothing;

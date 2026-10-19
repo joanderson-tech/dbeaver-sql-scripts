@@ -1,0 +1,7 @@
+select * from  ensino.docente_turma
+	WHERE id_docente_turma IN (51933853, 51933855, 51933856, 51933858, 51933860, 51933859, 51933857, 51933854);
+
+
+UPDATE ensino.docente_turma
+	SET ativo=false
+	WHERE id_docente_turma IN (51933853, 51933855, 51933856, 51933858, 51933860, 51933859, 51933857, 51933854);

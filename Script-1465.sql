@@ -1,0 +1,1 @@
+SELECT * FROM matricula.estudante_inscrito WHERE id_calendario_matricula = 58430785;

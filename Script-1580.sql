@@ -1,0 +1,18 @@
+SELECT p.nome_mae, p.data_nascimento,*
+FROM comum.pessoa p
+WHERE p.nome ILIKE 'ANTONIO LUCAS VIEIRA CARVALHO'
+
+SELECT calendario0_.id_calendario_matricula AS col_0_0_, calendario0_.ano AS col_1_0_, calendario0_.periodo AS col_2_0_, calendario0_.data_inicio_novos_alunos_nee AS col_3_0_, calendario0_.data_fim_novos_alunos_nee AS col_4_0_, calendario0_.inicio_renovacao_nee AS col_5_0_, calendario0_.fim_renovacao_nee AS col_6_0_, calendario0_.inicio_transf_nee AS col_7_0_, calendario0_.fim_transf_nee AS col_8_0_, calendario0_.data_inicio_transf_int_proprio AS col_9_0_, calendario0_.data_fim_transf_int_proprio AS col_10_0_, calendario0_.data_inicio_transf_auto AS col_11_0_, calendario0_.data_inicio_transf_int_proprio_semestral AS col_12_0_, calendario0_.data_fim_transf_int_proprio_semestral AS col_13_0_, calendario0_.data_fim_transf_auto AS col_14_0_, calendario0_.data_inicio_renovacao AS col_15_0_, calendario0_.data_fim_renovacao AS col_16_0_, calendario0_.data_inicio_remanescentes AS col_17_0_, calendario0_.data_inicio_renovacao_semestral AS col_18_0_, calendario0_.data_fim_renovacao_semestral AS col_19_0_, calendario0_.data_fim_remanescentes AS col_20_0_, calendario0_.vigente AS col_21_0_, calendario0_.data_inicio_periodo_oferta_vagas AS col_22_0_, calendario0_.data_fim_periodo_oferta_vagas AS col_23_0_, calendario0_.resultado_publicado AS col_24_0_, calendario0_.ativo AS col_25_0_, calendario0_.id_unidade AS col_26_0_, unidade3_.codigo_unidade AS col_27_0_, unidade3_.nome AS col_28_0_, calendario0_.id_orientacao_matricula AS col_29_0_, orientacao1_.descricao AS col_30_0_, calendario0_.id_questionario_socio_economico AS col_31_0_, calendario0_.id_questionario_nee AS col_32_0_, calendario0_.prazo_validade_vaga_concedida AS col_33_0_, calendario0_.data_validade_vaga_concedida AS col_34_0_, calendario0_.prazo_validade_vaga_remanescente_concedida AS col_35_0_, calendario0_.prazo_efetivacao_novo_nee AS col_36_0_, calendario0_.data_efetivacao_novo_nee AS col_37_0_, calendario0_.descricao AS col_38_0_, calendario0_.data_inicio_periodo_oferta_vagas_semestral AS col_39_0_, calendario0_.data_fim_periodo_oferta_vagas_semestral AS col_40_0_, calendario0_.data_fim_avaliacao_nee AS col_41_0_, calendario0_.inicio_consulta_matricula AS col_42_0_, calendario0_.fim_consulta_matricula AS col_43_0_, calendario0_.data_inicio_transf_int_prop_remanescente AS col_44_0_, calendario0_.data_fim_transf_int_prop_remanescente AS col_45_0_, calendario0_.data_inicio_solicitacao_vaga_componente AS col_46_0_, calendario0_.data_fim_solicitacao_vaga_componente AS col_47_0_, calendario0_.utiliza_matricula_antecipada_nee AS col_48_0_, calendario0_.prazo_preenchimeno_questionario_nee AS col_49_0_, calendario0_.utiliza_periodo_matricula_online AS col_50_0_, calendario0_.utiliza_periodo_semestral_solicitacoes AS col_51_0_, calendario0_.inicio_consulta_solicitacao_reserva AS col_52_0_, calendario0_.fim_consulta_solicitacao_reserva AS col_53_0_
+FROM matricula.calendario_matricula calendario0_
+LEFT OUTER JOIN matricula.orientacao_matricula orientacao1_ ON
+calendario0_.id_orientacao_matricula = orientacao1_.id_orientacao_matricula
+LEFT OUTER JOIN matricula.questionario_socio_economico questionar2_ ON
+calendario0_.id_questionario_socio_economico = questionar2_.id_questionario_socio_economico, comum.unidade unidade3_
+WHERE calendario0_.id_unidade = unidade3_.id_unidade;
+AND calendario0_.id_unidade =?
+AND calendario0_.vigente = TRUE
+AND calendario0_.ativo = TRUE
+
+
+SELECT *
+FROM matricula.calendario_matricula WHERE id_calendario_matricula = 83879888;

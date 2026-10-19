@@ -1,0 +1,19 @@
+-- Banco Acadêmico
+
+ALTER TABLE ensino_infantil.habilidade_competencia ADD COLUMN habilitado_para_conteudo_ministrado BOOLEAN NOT NULL DEFAULT false;
+  
+CREATE SEQUENCE ensino_infantil.habilidade_competencia_etapa_ensino_seq INCREMENT BY 1 START 1 CACHE 1 NO CYCLE;
+CREATE TABLE ensino_infantil.habilidade_competencia_etapa_ensino (id_habilidade_competencia_etapa_ensino BIGINT NOT NULL DEFAULT nextval('ensino_infantil.habilidade_competencia_etapa_ensino_seq'), id_habilidade_competencia BIGINT NOT NULL, id_etapa_ensino BIGINT NOT NULL, CONSTRAINT pk_habilidade_competencia_etapa_ensino PRIMARY KEY (id_habilidade_competencia_etapa_ensino), CONSTRAINT fk_habilidade_competencia_etapa FOREIGN KEY (id_habilidade_competencia) REFERENCES ensino_infantil.habilidade_competencia(id_habilidade_competencia), CONSTRAINT fk_etapa_ensino FOREIGN KEY (id_etapa_ensino) REFERENCES basico.etapa_ensino(id_etapa_ensino));
+  
+CREATE SEQUENCE ensino_infantil.habilidade_competencia_componente_curricular_seq INCREMENT BY 1 START 1 CACHE 1 NO CYCLE;
+CREATE TABLE ensino_infantil.habilidade_competencia_componente_curricular (id_habilidade_competencia_componente_curricular BIGINT NOT NULL DEFAULT nextval('ensino_infantil.habilidade_competencia_componente_curricular_seq'), id_habilidade_competencia BIGINT NOT NULL, id_componente_curricular BIGINT NOT NULL, CONSTRAINT pk_habilidade_competencia_componente_curricular PRIMARY KEY (id_habilidade_competencia_componente_curricular), CONSTRAINT fk_habilidade_competencia_componente FOREIGN KEY (id_habilidade_competencia) REFERENCES ensino_infantil.habilidade_competencia(id_habilidade_competencia), CONSTRAINT fk_componente_curricular FOREIGN KEY (id_componente_curricular) REFERENCES ensino.componente_curricular(id_componente_curricular));
+   
+CREATE SEQUENCE ensino_infantil.habilidade_competencia_serie_seq INCREMENT BY 1 START 1 CACHE 1 NO CYCLE;
+CREATE TABLE ensino_infantil.habilidade_competencia_serie (id_habilidade_competencia_serie BIGINT NOT NULL DEFAULT nextval('ensino_infantil.habilidade_competencia_serie_seq'), id_habilidade_competencia BIGINT NOT NULL, id_serie BIGINT NOT NULL, CONSTRAINT pk_habilidade_competencia_serie PRIMARY KEY (id_habilidade_competencia_serie), CONSTRAINT fk_habilidade_competencia_serie FOREIGN KEY (id_habilidade_competencia) REFERENCES ensino_infantil.habilidade_competencia(id_habilidade_competencia), CONSTRAINT fk_serie FOREIGN KEY (id_serie) REFERENCES basico.serie(id_serie));
+
+ALTER TABLE ava.topico_aula ADD COLUMN quantidade_aulas INT;
+ALTER TABLE ava.topico_aula ADD COLUMN metodologia TEXT;
+ALTER TABLE ava.topico_aula ADD COLUMN observacoes TEXT;
+
+CREATE SEQUENCE ava.topico_aula_habilidade_seq INCREMENT BY 1 START 1 CACHE 1 NO CYCLE;
+CREATE TABLE ava.topico_aula_habilidade (id_topico_aula_habilidade BIGINT NOT NULL DEFAULT nextval('ava.topico_aula_habilidade_seq'), id_topico_aula BIGINT NOT NULL, id_habilidade_competencia BIGINT NOT NULL, CONSTRAINT pk_topico_aula_habilidade PRIMARY KEY (id_topico_aula_habilidade), CONSTRAINT fk_topico_aula FOREIGN KEY (id_topico_aula) REFERENCES ava.topico_aula(id_topico_aula), CONSTRAINT fk_habilidade_competencia FOREIGN KEY (id_habilidade_competencia) REFERENCES ensino_infantil.habilidade_competencia(id_habilidade_competencia));

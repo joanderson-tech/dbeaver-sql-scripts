@@ -1,0 +1,1 @@
+DELETE FROM comum.parametro WHERE codigo IN ('infra.recaptchaSiteKey' , 'infra.recaptchaSecretKey');

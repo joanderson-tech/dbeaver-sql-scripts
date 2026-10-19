@@ -1,0 +1,1 @@
+SELECT * FROM comum.pessoa p WHERE p.id_pessoa IN (51881931,756724) ;

@@ -1,0 +1,14 @@
+ALTER TABLE ensino.registro_falta_professor ADD id_tipo_falta int4;
+ALTER TABLE ensino.registro_falta_professor ADD id_status_falta int4;
+ALTER TABLE ensino.registro_falta_professor ADD id_arquivo int4 NULL;
+ALTER TABLE ensino.registro_falta_professor ADD data_inicio date NULL;
+ALTER TABLE ensino.registro_falta_professor ADD data_fim date NULL;
+ALTER TABLE ensino.registro_falta_professor ADD quantidade_dias int4;
+ALTER TABLE ensino.registro_falta_professor ADD id_servidor int4;
+ALTER TABLE ensino.registro_falta_professor ADD id_unidade int4;
+ALTER TABLE ensino.registro_falta_professor ADD CONSTRAINT registro_falta_professor_id_servidor_fkey FOREIGN KEY (id_servidor) REFERENCES rh.servidor(id_servidor);
+ALTER TABLE ensino.registro_falta_professor ADD CONSTRAINT registro_falta_professor_id_unidade_fkey FOREIGN KEY (id_unidade) REFERENCES comum.unidade(id_unidade);
+ALTER TABLE ensino.registro_falta_professor ALTER COLUMN id_docente_turma DROP NOT NULL;
+ALTER TABLE ensino.registro_falta_professor ALTER COLUMN data_aula DROP NOT NULL;
+ALTER TABLE ensino.registro_falta_professor ADD CONSTRAINT registro_falta_professor_id_status_falta_fkey FOREIGN KEY (id_status_falta) REFERENCES rh.status_falta(id_status_falta);
+ALTER TABLE ensino.registro_falta_professor ADD CONSTRAINT registro_falta_professor_id_tipo_falta_fkey FOREIGN KEY (id_tipo_falta) REFERENCES rh.tipo_falta(id_tipo_falta);

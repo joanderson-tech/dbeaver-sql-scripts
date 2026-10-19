@@ -1,0 +1,1 @@
+SELECT * FROM comum.parametro WHERE codigo ILIKE '%OCULTAR_LISTA_DE_NEE_PRE_MATRICULA%';

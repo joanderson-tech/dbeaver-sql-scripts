@@ -1,0 +1,1 @@
+SELECT * FROM ava.registro_acao_ava WHERE  id_turma = 682012;

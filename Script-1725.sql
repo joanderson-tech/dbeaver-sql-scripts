@@ -1,0 +1,1 @@
+INSERT INTO comum.parametro (nome, descricao, valor, id_sistema, codigo, tipo, bloquear_alteracao) VALUES ('CONTEUDO_COM_HABILIDADES', 'Esse parâmetro habilita associar habilidades e metodologia ao conteúdo ministrado em todas as turmas.', 'false', 2, 'conteudo_com_habilidades', 0, false) ON CONFLICT DO NOTHING;
