@@ -1,0 +1,262 @@
+{
+	"folders": {},
+	"connections": {
+		"dbeaver-sample-database-sqlite-1": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "DBeaver Sample Database (SQLite)",
+			"save-password": true,
+			"show-system-objects": true,
+			"configuration": {
+				"database": "C:\\Users\\joanderson\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db",
+				"url": "jdbc:sqlite:C:\\Users\\joanderson\\AppData\\Roaming\\DBeaverData\\workspace6\\.metadata\\sample-database-sqlite-1\\Chinook.db",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": false
+			}
+		},
+		"postgres-jdbc-189b24366da-400ea859d656599": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "portalsigeduc_desenv_ref",
+			"save-password": true,
+			"configuration": {
+				"host": "desenvolvimento-sigeduc.esig.com.br",
+				"port": "5432",
+				"database": "portalsigeduc_desenv_ref",
+				"url": "jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_ref",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-15",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20",
+					"escapeSyntaxCallMode": "callIfNoReturn"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"valueManager.basico.unificacao_estudante:script_backup": "plaintext"
+			}
+		},
+		"postgres-jdbc-18f722d3e1c-12f7e4c3e920c08a": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "s1-db-01",
+			"save-password": true,
+			"configuration": {
+				"host": "s1-portal-db-01.esig.com.br",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://s1-portal-db-01.esig.com.br:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-13",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18f722e61a8-6be5d113e3cb95b6": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "s1-db-02",
+			"save-password": true,
+			"configuration": {
+				"host": "s1-portal-db-02.esig.com.br",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://s1-portal-db-02.esig.com.br:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-13",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18f722f047f-55a36887da738e8a": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "s2-db-01",
+			"save-password": true,
+			"configuration": {
+				"host": "s2-portal-db-01.esig.com.br",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://s2-portal-db-01.esig.com.br:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-13",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18f722f9bf7-519a0e126aece854": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "Mlogs",
+			"save-password": true,
+			"configuration": {
+				"host": "s2-portal-db-02.esig.com.br",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://s2-portal-db-02.esig.com.br:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-13",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"valueManager.params": "json",
+				"valueManager.public.log_db:properties": "json"
+			}
+		},
+		"postgres-jdbc-18f72300497-2b0a7583aca76786": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "s3-db-02",
+			"save-password": true,
+			"configuration": {
+				"host": "s3-portal-db-02.esig.com.br",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://s3-portal-db-02.esig.com.br:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-13",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18f72305a86-6493285ef22e1c6c": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "s4-db-01",
+			"save-password": true,
+			"configuration": {
+				"host": "s4-portal-db-01.esig.com.br",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://s4-portal-db-01.esig.com.br:5432/postgres",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-13",
+				"type": "dev",
+				"closeIdleConnection": false,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"read-keys-with-columns": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"mysql8-1a0a790259f-478b35847e6ca0f4": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "MODELAGEM DE DADOS",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-all-dbs@": "true"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {"postgres-jdbc-189b24366da-400ea859d656599":{"portalsigeduc_desenv_rn_novacruz":{"basico":{":serie":{"description":"descricao"}}},"portalsigeduc_desenv_rn_mossoro":{"rh":{":categoria":{"description":"descricao"}},"ensino":{":componente_curricular":{"description":"nome"}},"basico":{":serie":{"description":"descricao"}}},"portalsigeduc_desenv_rn_boasaude":{"basico":{":serie":{"description":"descricao"}}},"portalsigeduc_desenv_rn_janduis":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_rn_touros":{"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_pe_petrolina":{"comum":{":pessoa":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"nome"}},"basico":{":serie":{"description":"descricao"},":turma_serie":{"description":"nome"}},"ensino_infantil":{":configuracao_relatorio_componente":{"description":"id_configuracao_relatorio_componente"}},"escola":{":escola":{"description":"nome"}},"matricula":{":vaga_serie":{"description":"desricao_remanescente_bloqueada"}}},"portalsigeduc_desenv_rn_timbaubadosbatistas":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_pb_juazeirinho":{"basico":{":serie":{"description":"descricao"}},"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_pb_solanea":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_baiaformosa":{"basico":{":serie":{"description":"sigla,descricao"}}},"portalsigeduc_desenv_pb_sousa":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_carnaubadosdantas":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_caico":{"ensino":{":componente_curricular":{"description":"nome"}},"escola":{":escola":{"description":"email,nome"}},"comum":{":recurso_avaliacao_tipo_necessidade_especial":{"constraints":{"VIRTUAL_PK":{"type":"vpk","attributes":["id_recurso_avaliacao_nee"]}}}},"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_rn_barcelona":{"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_pb_duasestradas":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_goianinha":{"ensino":{":componente_curricular":{"description":"nome"}},"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_rn_lagoadepedras":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_altodorodrigues":{"ensino":{":componente_curricular":{"description":"nome"}},"basico":{":curriculo_basico_componente":{"constraints":{"VIRTUAL_PK":{"type":"vpk","useAllColumns":true}}},":matricula_estudante_serie":{"constraints":{"VIRTUAL_PK":{"type":"vpk","attributes":["id_matricula_discente_serie"]}}}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_educ21_treinamento":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_rn_pureza":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_pb_campinagrande":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_al_junqueiro":{"ensino":{":componente_curricular":{"description":"nome"}},"basico":{":serie":{"description":"codigo_rh,descricao"}},"ensino_infantil":{":relatorio_avaliativo_componente":{"description":"avaliacao_descritiva"}}},"portalsigeduc_desenv_se_telha":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_se_nossasenhoradosocorro":{"rh":{":cargo":{"description":"atribuicoes,denominacao"},":servidor":{"constraints":{"VIRTUAL_PK":{"type":"vpk","useAllColumns":true}}}},"basico":{":series_tce_se":{"description":"descricao"},":etapa_ensino":{"description":"forma_oferta_profissional,denominacao"},":serie":{"description":"descricao"}},"comum":{":municipio":{"description":"nome_ascii"}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_rn_saogoncalodoamarante":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_rn_montedasgameleiras":{"ensino":{":componente_curricular":{"description":"codigo,nome"}},"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_rn_espiritosanto":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_curraisnovos":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_lajes":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_pe_araripina":{"basico":{":etapa_ensino":{"description":"sigla,forma_oferta_profissional,denominacao"},":serie":{"description":"codigo_rh,descricao"}},"ensino":{":componente_curricular":{"description":"nome"}},"comum":{":pessoa":{"description":"email,nome"}},"ensino_infantil":{":configuracao_relatorio_componente":{"properties":{"erd.diagram.state":{"serialized":"\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202609021700\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"postgres-jdbc-189b24366da-400ea859d656599\"\u003e\u003centity id\u003d\"1\" name\u003d\"configuracao_relatorio_componente\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente\" order\u003d\"0\" color-bg\u003d\"128,64,32\" x\u003d\"432\" y\u003d\"456\"\u003e\u003cpath name\u003d\"ensino_infantil\"/\u003e\u003cpath name\u003d\"portalsigeduc_desenv_pe_araripina\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"componente_curricular\" fq-name\u003d\"ensino.componente_curricular\" order\u003d\"1\" color-bg\u003d\"204,192,184\" x\u003d\"763\" y\u003d\"644\"\u003e\u003cpath name\u003d\"ensino\"/\u003e\u003cpath name\u003d\"portalsigeduc_desenv_pe_araripina\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"configuracao_relatorio\" fq-name\u003d\"ensino_infantil.configuracao_relatorio\" order\u003d\"2\" x\u003d\"763\" y\u003d\"258\"\u003e\u003cpath name\u003d\"ensino_infantil\"/\u003e\u003cpath name\u003d\"portalsigeduc_desenv_pe_araripina\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"registro_entrada\" fq-name\u003d\"comum.registro_entrada\" order\u003d\"3\" color-bg\u003d\"228,255,181\" x\u003d\"1100\" y\u003d\"208\"\u003e\u003cpath name\u003d\"comum\"/\u003e\u003cpath name\u003d\"portalsigeduc_desenv_pe_araripina\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"tipo_avaliacao_componente_relatorio\" fq-name\u003d\"ensino_infantil.tipo_avaliacao_componente_relatorio\" order\u003d\"4\" x\u003d\"763\" y\u003d\"1028\"\u003e\u003cpath name\u003d\"ensino_infantil\"/\u003e\u003cpath name\u003d\"portalsigeduc_desenv_pe_araripina\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"configuracao_relatorio_componente_habilidade\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente_habilidade\" order\u003d\"5\" x\u003d\"40\" y\u003d\"536\"\u003e\u003cpath name\u003d\"ensino_infantil\"/\u003e\u003cpath name\u003d\"portalsigeduc_desenv_pe_araripina\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"relatorio_avaliativo_componente\" fq-name\u003d\"ensino_infantil.relatorio_avaliativo_componente\" order\u003d\"6\" border-width\u003d\"3\" x\u003d\"187\" y\u003d\"61\"\u003e\u003cpath name\u003d\"ensino_infantil\"/\u003e\u003cpath name\u003d\"portalsigeduc_desenv_pe_araripina\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations\u003e\u003crelation name\u003d\"onfiguracao_relatorio_componente_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente_habilidade.onfiguracao_relatorio_componente_fk\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"6\"/\u003e\u003crelation name\u003d\"configuracao_relatorio_componente_fk\" fq-name\u003d\"ensino_infantil.relatorio_avaliativo_componente.configuracao_relatorio_componente_fk\" type\u003d\"fk\" pk-ref\u003d\"1\" fk-ref\u003d\"7\"/\u003e\u003crelation name\u003d\"componente_curricular_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente.componente_curricular_fk\" type\u003d\"fk\" pk-ref\u003d\"2\" fk-ref\u003d\"1\"/\u003e\u003crelation name\u003d\"configuracao_relatorio_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente.configuracao_relatorio_fk\" type\u003d\"fk\" pk-ref\u003d\"3\" fk-ref\u003d\"1\"/\u003e\u003crelation name\u003d\"registro_atualizacao_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente.registro_atualizacao_fk\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"1\"/\u003e\u003crelation name\u003d\"registro_cadastro_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente.registro_cadastro_fk\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"1\"/\u003e\u003crelation name\u003d\"registro_atualizacao_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio.registro_atualizacao_fk\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"registro_cadastro_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio.registro_cadastro_fk\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"3\"/\u003e\u003crelation name\u003d\"registro_atualizacao_fk\" fq-name\u003d\"ensino_infantil.relatorio_avaliativo_componente.registro_atualizacao_fk\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"7\"\u003e\u003cbend type\u003d\"abs\" x\u003d\"432\" y\u003d\"186\"/\u003e\u003cbend type\u003d\"abs\" x\u003d\"763\" y\u003d\"186\"/\u003e\u003c/relation\u003e\u003crelation name\u003d\"registro_cadastro_fk\" fq-name\u003d\"ensino_infantil.relatorio_avaliativo_componente.registro_cadastro_fk\" type\u003d\"fk\" pk-ref\u003d\"4\" fk-ref\u003d\"7\"\u003e\u003cbend type\u003d\"abs\" x\u003d\"432\" y\u003d\"207\"/\u003e\u003cbend type\u003d\"abs\" x\u003d\"763\" y\u003d\"207\"/\u003e\u003c/relation\u003e\u003crelation name\u003d\"tipo_avaliacao_componente_relatorio_fk\" fq-name\u003d\"ensino_infantil.configuracao_relatorio_componente.tipo_avaliacao_componente_relatorio_fk\" type\u003d\"fk\" pk-ref\u003d\"5\" fk-ref\u003d\"1\"/\u003e\u003c/relations\u003e\u003c/diagram\u003e"}}}}},"portalsigeduc_desenv_rn_saojosedoserido":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_validacao":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_lagoanova":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_sitionovo":{"ensino":{":componente_curricular":{"description":"nome,codigo"}}},"portalsigeduc_desenv_rn_nisiafloresta":{"basico":{":serie":{"description":"codigo_rh,descricao"}},"matricula":{":status_solicitacao_transferencia":{"description":"denominacao"}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_rn_upanema":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_pb_cuite":{"ensino":{":componente_curricular":{"description":"nome"}},"escola":{":escola":{"description":"email,nome"}},"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_pe_saojosedoegito":{"ensino":{":componente_curricular":{"description":"codigo,nome"}},"basico":{":serie":{"description":"codigo_rh,descricao"}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_pe_orobo":{"ensino":{":componente_curricular":{"description":"nome"}},"basico":{":situacao_matricula_serie":{"description":"descricao"},":etapa_ensino":{"description":"forma_oferta_profissional,denominacao"},":serie":{"description":"descricao"}},"escola":{":escola":{"description":"nome"}}},"portalsigeduc_desenv_pb_saobento":{"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_rn_jardimdoserido_comum":{"comum":{":subsistema":{"description":"nome"}}},"portalsigeduc_desenv_pe_camaragibe":{"ensino":{":componente_curricular":{"description":"codigo,nome"}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_rn_campogrande":{"basico":{":serie":{"description":"descricao"}}},"portalsigeduc_desenv_rn_pedroavelino":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_se_lagarto":{"comum":{":municipio":{"description":"nome_ascii"},":unidade":{"description":"email"}},"basico":{":etapa_ensino":{"description":"forma_oferta_profissional,denominacao"},":serie":{"description":"codigo_rh,descricao"}},"escola":{":escola":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_pb_caapora":{"ensino":{":componente_curricular":{"description":"codigo,nome"}},"basico":{":serie":{"description":"codigo_rh,descricao"}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_rn_eloidesouza":{"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_rn_carnaubais":{"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_pb_cabedelo":{"ensino":{":componente_curricular":{"description":"codigo,nome"}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_al_arapiraca":{"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_rn_santoantonio":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_rn_saotome":{"ensino":{":componente_curricular":{"description":"nome"}},"comum":{":unidade":{"description":"email,nome"}}},"portalsigeduc_desenv_rn_montanhas":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_pi_saojoaodopiaui":{"escola":{":escola":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_rn_saomigueldogostoso":{"basico":{":etapa_ensino":{"description":"forma_oferta_profissional,denominacao"}}},"portalsigeduc_desenv_pb_pedrasdefogo":{"escola":{":escola":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"nome"}},"comum":{":registro_entrada":{"description":"codmergcomperve,id_usuario"}}},"portalsigeduc_desenv_testes_dois":{"ensino":{":componente_curricular":{"description":"nome"}},"escola":{":escola":{"description":"email,nome"}}},"portalsigeduc_desenv_pb_novafloresta":{"ensino":{":componente_curricular":{"description":"nome"}}},"portalsigeduc_desenv_pb_esperanca":{"basico":{":serie":{"description":"codigo_rh,descricao"}},"escola":{":escola":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"portalsigeduc_desenv_rn_ruybarbosa":{"ensino":{":componente_curricular":{"description":"codigo,nome"}},"basico":{":serie":{"description":"codigo_rh,descricao"}}},"portalsigeduc_desenv_rn_macau":{"escola":{":escola":{"description":"nome"}}}},"postgres-jdbc-18f722d3e1c-12f7e4c3e920c08a":{"sigeduc_cloud_rn_mossoro":{"ensino":{":componente_curricular":{"description":"codigo"}}},"sigeduc_cloud_rn_tibaudosul":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"sigeduc_cloud_rn_macau":{"basico":{":etapa_ensino":{"description":"forma_oferta_profissional,denominacao"}}},"sigeduc_cloud_rn_saojosedoserido":{"ensino":{":componente_curricular":{"description":"nome"}}},"sigeduc_cloud_pe_araripina":{"ensino":{":componente_curricular":{"description":"codigo,nome"}},"basico":{":etapa_ensino":{"description":"forma_oferta_profissional,denominacao"}}},"sigeduc_cloud_pb_caapora":{"ensino":{":componente_curricular":{"description":"nome"}}},"sigeduc_cloud_pb_pedrasdefogo":{"basico":{":serie":{"description":"codigo_rh,descricao"}}}},"postgres-jdbc-18f722e61a8-6be5d113e3cb95b6":{"sigeduc_cloud_rn_pureza":{"ensino":{":componente_curricular":{"description":"codigo,sigla"}}},"sigeduc_cloud_se_lagarto":{"rh":{":cargo":{"description":"atribuicoes,denominacao"},":atividade":{"description":"descricao"}},"comum":{":unidade":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"nome"}}},"sigeduc_cloud_pb_esperanca":{"escola":{":escola":{"description":"email,nome"}}}},"postgres-jdbc-18f722f047f-55a36887da738e8a":{"sigeduc_cloud_se_nossasenhoradosocorro":{"rh":{":cargo":{"description":"atribuicoes,denominacao"}},"comum":{":unidade":{"description":"email,nome"}}},"sigeduc_cloud_rn_guamare":{"basico":{":turma_serie":{"description":"codturma_censo2012,id_serie"}}},"sigeduc_cloud_rn_jardimdoserido":{"basico":{":curriculo_basico":{"description":"codigo"}},"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"sigeduc_cloud_rn_goianinha":{"escola":{":escola":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"nome"}}}},"postgres-jdbc-18f72300497-2b0a7583aca76786":{"sigeduc_cloud_rn_carnaubadosdantas":{"ensino":{":componente_curricular":{"description":"nome"}}},"sigeduc_cloud_rn_eloidesouza":{"comum":{":unidade":{"description":"email,nome"}},"ensino":{":componente_curricular":{"description":"nome"}},"rh":{":atividade":{"description":"abreviatura,descricao"},":cargo":{"description":"atribuicoes,denominacao"}}},"sigeduc_cloud_pe_petrolina":{"basico":{":turma_serie":{"description":"codturma_censo2012,nome"},":serie":{"description":"codigo_rh,descricao"}},"ensino":{":componente_curricular":{"description":"nome"}}}},"postgres-jdbc-18f72305a86-6493285ef22e1c6c":{"sigeduc_cloud_pb_cuite":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"sigeduc_cloud_pe_camaragibe":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"sigeduc_cloud_rn_altodorodrigues":{"ensino":{":componente_curricular":{"description":"codigo,nome"}}},"sigeduc_cloud_pi_saojoaodopiaui":{"escola":{":escola":{"description":"nome"}}}}},
+	"connection-types": {
+		"dev": {
+			"name": "Desenvolvimento",
+			"color": "255,255,255",
+			"description": "Banco de dados de desenvolvimento",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
