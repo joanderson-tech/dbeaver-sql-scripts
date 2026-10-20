@@ -1,0 +1,3297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ===================================================================== -->
+<!--                                                                       -->
+<!--  JBoss Server Configuration                                           -->
+<!--                                                                       -->
+<!-- ===================================================================== -->
+
+<!-- $Id: postgres-ds.xml,v 1.1 2002/07/22 22:57:24 d_jencks Exp $ -->
+<!-- ==================================================================== -->
+<!--  Datasource config for Postgres                                      -->
+<!-- ==================================================================== -->
+
+
+<datasources>
+
+<local-tx-datasource>
+                <jndi-name>jdbc/ruybarbosa-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ruybarbosa</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/ruybarbosa-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ruybarbosa_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+
+ <local-tx-datasource>
+                <jndi-name>jdbc/testes_dois-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_dois_testes</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/testes-dois-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_dois_testes_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/testes_um-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_um_testes</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/testes-um-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_um_testes_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+<local-tx-datasource>
+                <jndi-name>jdbc/testes_tres-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_tres_testes</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/testes-tres-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_tres_testes_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+    
+ 
+
+    <local-tx-datasource>
+                <jndi-name>jdbc/esperanca-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_esperanca</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/esperanca-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_esperanca_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+     </local-tx-datasource>
+
+     <local-tx-datasource>
+                <jndi-name>jdbc/novafloresta-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_novafloresta</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/novafloresta-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_novafloresta_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+	<local-tx-datasource>
+                <jndi-name>jdbc/bentofernandes-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_bentofernandes</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/bentofernandes-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_bentofernandes_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+     <local-tx-datasource>
+                <jndi-name>jdbc/saomigueldogostoso-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saomigueldogostoso</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saomigueldogostoso-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saomigueldogostoso_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+    <local-tx-datasource>
+                <jndi-name>jdbc/caapora-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_caapora</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/caapora-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_caapora_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pedrasdefogo-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_pedrasdefogo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pedrasdefogo-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_pedrasdefogo_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+   <local-tx-datasource>
+                <jndi-name>jdbc/extremoz-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_extremoz</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/extremoz-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_extremoz_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/saojosedoegito-pe-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_saojosedoegito</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saojosedoegito-pe-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_saojosedoegito_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+ <local-tx-datasource>
+                <jndi-name>jdbc/passagem-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_passagem</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/passagem-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_passagem_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+
+  <local-tx-datasource>
+                <jndi-name>jdbc/camaragibe-pe-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_camaragibe</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/camaragibe-pe-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_camaragibe_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+ <local-tx-datasource>
+                <jndi-name>jdbc/santaluzia-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_santaluzia</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santaluzia-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_santaluzia_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/validacao-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_validacao</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/validacao-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_validacao_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+    <local-tx-datasource>
+                <jndi-name>jdbc/junqueiro-al-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_junqueiro</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/junqueiro-al-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_junqueiro_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/campogrande-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_campogrande</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/campogrande-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_campogrande_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>	
+
+<local-tx-datasource>
+                <jndi-name>jdbc/cuite-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_cuite_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/cuite-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_cuite</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cuitegi-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_cuitegi_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/cuitegi-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_cuitegi</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/araripina-pe-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_araripina</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/araripina-pe-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_araripina_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/doutorseveriano-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_doutorseveriano</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/doutorseveriano-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_doutorseveriano_comum</connection-url>
+                <user-name>comum_user</user-name>
+                <password>comum_user</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saogoncalodoamarante-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saogoncalodoamarante_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/baiaformosa-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_baiaformosa</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+   <local-tx-datasource>
+                <jndi-name>jdbc/baiaformosa-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_baiaformosa_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/tangara-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_tangara</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+   <local-tx-datasource>
+                <jndi-name>jdbc/tangara-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_tangara_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saogoncalodoamarante-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saogoncalodoamarante</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/acari-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_acari</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/caico-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_caico</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pedroavelino-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pedroavelino</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pedroavelino-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pedroavelino_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/caico-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_caico_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/ipanguacu-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ipanguacu</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/ipanguacu-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ipanguacu_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/barauna-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_barauna</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/barauna-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_barauna_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pendencias-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pendencias</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/casinhas-pe-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_casinhas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/touros-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_touros</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/arapiraca-al-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_arapiraca</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/joaodias-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_joaodias_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/bodo-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_bodo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/nossasenhoradosocorro-se-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_nossasenhoradosocorro_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/itapororoca-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_itapororoca</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/assu-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_assu_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/bodo-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_bodo_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/carnaubadosdantas-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_carnaubadosdantas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/arapiraca-al-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_arapiraca_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/demonstracao-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_esig_demonstracao</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/demonstracao-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_esig_demonstracao_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoasalgada-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoasalgada</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoasalgada-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoasalgada_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pendencias-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pendencias_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/petrolina-testes-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_petrolina</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+        <local-tx-datasource>
+                <jndi-name>jdbc/petrolina-testes-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_petrolina_validacao_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoanova-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoanova</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/petrolina-pe-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_petrolina</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoanova-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoanova_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/novacruz-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_novacruz_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/goianinha-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_goianinha_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/camporedondo-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_camporedondo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/assu-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_assu</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/camporedondo-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_camporedondo_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santacruz-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santacruz</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/nossasenhoradosocorro-se-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_nossasenhoradosocorro</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/curraisnovos-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_curraisnovos</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/curraisnovos-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_curraisnovos_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/referencia-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/s4_portalsigeduc_desenv_ref_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/referencia-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/s4_portalsigeduc_desenv_ref</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/tibaudosul-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_tibaudosul</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/tibaudosul-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_tibaudosul_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/joaodias-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_joaodias</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/prata-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_prata</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/demo-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_educ21_demonstracao_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/demo-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_educ21_demonstracao</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/prata-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_prata_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/eloidesouza-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_eloidesouza</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/eloidesouza-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_eloidesouza_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/sitionovo-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_sitionovo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/petrolina-pe-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_petrolina_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/itapororoca-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_itapororoca_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/sitionovo-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_sitionovo_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/alexandria-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_alexandria</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/alexandria-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_alexandria_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/touros-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_touros_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santacruz-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santacruz_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saofernando-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saofernando</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santamaria-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santamaria</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/nisiafloresta-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_nisiafloresta</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santamaria-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santamaria_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saofernando-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saofernando_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pedragrande-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pedragrande</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/nisiafloresta-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_nisiafloresta_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/parnamirim-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_parnamirim_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/portalegre-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_portalegre</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/portalegre-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_portalegre_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/carnaubadosdantas-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_carnaubadosdantas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/veracruz-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_veracruz</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/telha-se-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_telha_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/veracruz-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_veracruz_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pedragrande-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pedragrande_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/goianinha-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_goianinha</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/acari-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_acari_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/luisgomes-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_luisgomes</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/luisgomes-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_luisgomes_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saorafael-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saorafael</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saorafael-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saorafael_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/saopedro-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saopedro</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saopedro-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saopedro_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/campinagrande-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_campinagrande</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/campinagrande-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_campinagrande_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/duasestradas-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_duasestradas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/duasestradas-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_duasestradas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+    <local-tx-datasource>
+                <jndi-name>jdbc/bomjesus-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_bomjesus</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/alhandra-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_alhandra</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/alhandra-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_alhandra_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/bomjesus-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_bomjesus_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/orobo-pe-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_orobo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/orobo-pe-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_orobo_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/guamare-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_guamare</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/guamare-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_guamare_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/upanema-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_upanema</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/aguanova-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_aguanova</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/aguanova-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_aguanova_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/upanema-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_upanema_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cerrocora-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_cerrocora</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cerrocora-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_cerrocora_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/barcelona-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_barcelona_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/boasaude-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_boasaude</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/boasaude-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_boasaude_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/demonstracao2-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_demonstracao2</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/demonstracao2-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_demonstracao2_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/franciscodantas-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_franciscodantas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/franciscodantas-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_franciscodantas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoadepedras-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoadepedras</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/afonsobezerra-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_afonsobezerra_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/itau-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_itau_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jacana-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jacana</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoadepedras-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoadepedras_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/barcelona-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_barcelona</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/portodomangue-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_portodomangue</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/portodomangue-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_portodomangue_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/galinhos-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_galinhos_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/arez-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_arez</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/espiritosanto-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_espiritosanto</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cearamirim-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_cearamirim</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/timbaubadosbatistas-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_timbaubadosbatistas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/timbaubadosbatistas-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_timbaubadosbatistas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/itau-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_itau</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jacana-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jacana_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/janduis-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_janduis</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cearamirim-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_cearamirim_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/janduis-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_janduis_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/parnamirim-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_parnamirim</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/afonsobezerra-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_afonsobezerra</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/juazeiro-ba-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_ba_juazeiro</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/juazeiro-ba-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_ba_juazeiro_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jardimdoserido-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jardimdoserido</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jardimdoserido-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jardimdoserido_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/jardimdeangicos-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jardimdeangicos</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jardimdeangicos-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jardimdeangicos_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jundia-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jundia</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jundia-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jundia_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/varzea-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_varzea</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/varzea-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_varzea_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/casinhas-pe-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_casinhas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/espiritosanto-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_espiritosanto_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/ourobranco-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ourobranco</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/montealegredesergipe-se-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_montealegredesergipe</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/montealegredesergipe-se-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_montealegredesergipe_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoadevelhos-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoadevelhos</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/mossoro-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_mossoro</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/mossoro-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_mossoro_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/murici-al-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_murici_OLD</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/murici-al-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_murici_comum_OLD</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/arez-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_arez_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/antoniomartins-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_antoniomartins_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/antoniomartins-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_antoniomartins</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/telha-se-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_telha</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lajes-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lajes</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lajes-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lajes_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jandaira-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jandaira</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jandaira-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jandaira_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cruzeta-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_cruzeta</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cruzeta-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_cruzeta_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/ielmomarinho-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ielmomarinho</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/ielmomarinho-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ielmomarinho_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jardimdepiranhas-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jardimdepiranhas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/jardimdepiranhas-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_jardimdepiranhas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoadevelhos-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoadevelhos_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/novacruz-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_novacruz</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santoantonio-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santoantonio</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santoantonio-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santoantonio_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/majorsales-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_majorsales</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/majorsales-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_majorsales_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santanadomatos-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santanadomatos</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santanadomatos-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_santanadomatos_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/brejodocruz-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_brejodocruz</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/brejodocruz-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_brejodocruz_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/riachodacruz-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_riachodacruz</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/riachodacruz-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_riachodacruz_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santarita-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_santarita</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/santarita-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_santarita_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/bomjardim-pe-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_bomjardim</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/bomjardim-pe-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pe_bomjardim_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/riachuelo-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_riachuelo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/riachuelo-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_riachuelo_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/carnaubais-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_carnaubais</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/carnaubais-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_carnaubais_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pureza-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pureza</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pureza-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pureza_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saotome-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saotome</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saotome-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saotome_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/monteiro-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_monteiro</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/monteiro-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_monteiro_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/riodofogo-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_riodofogo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/riodofogo-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_riodofogo_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/macau-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_macau_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/macau-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_macau</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/angicos-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_angicos</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/angicos-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_angicos_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pocobranco-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pocobranco</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/pocobranco-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_pocobranco_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/ourobranco-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_ourobranco_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/galinhos-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_galinhos</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoadanta-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoadanta</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/lagoadanta-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_lagoadanta_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saobento-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_saobento</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saobento-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_saobento_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/parelhas-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_parelhas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/parelhas-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_parelhas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/parazinho-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_parazinho</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/parazinho-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_parazinho_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cabedelo-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_cabedelo</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/cabedelo-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_cabedelo_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/branquinha-al-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_branquinha</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/branquinha-al-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_al_branquinha_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/canguaretama-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_canguaretama</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/canguaretama-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_canguaretama_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+  <local-tx-datasource>
+                <jndi-name>jdbc/montanhas-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_montanhas</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/montanhas-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_montanhas_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+	<xa-datasource>
+                <jndi-name>jdbc/SIGAADB</jndi-name>
+                <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+                <xa-datasource-property name="ServerName">desenvolvimento-sigeduc.esig.com.br</xa-datasource-property>
+                <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+                <xa-datasource-property name="DatabaseName">portalsigeduc_desenv_ref</xa-datasource-property>
+                <xa-datasource-property name="User">sigeduc</xa-datasource-property>
+                <xa-datasource-property name="Password">sigeduc</xa-datasource-property>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+        </xa-datasource>
+ <local-tx-datasource>
+                <jndi-name>jdbc/juazeirinho-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_juazeirinho</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/juazeirinho-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_juazeirinho_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/sousa-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_sousa</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/sousa-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_sousa_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/solanea-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_solanea</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/solanea-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_solanea_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/montedasgameleiras-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_montedasgameleiras</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/montedasgameleiras-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_montedasgameleiras_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/saojosedoserido-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saojosedoserido</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/saojosedoserido-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_saojosedoserido_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/altodorodrigues-rn-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_altodorodrigues</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/altodorodrigues-rn-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rn_altodorodrigues_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/lagarto-se-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_lagarto</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/lagarto-se-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_se_lagarto_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/mamanguape-pb-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_mamanguape</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/mamanguape-pb-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pb_mamanguape_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+    <local-tx-datasource>
+                <jndi-name>jdbc/saojoaodopiaui-pi-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pi_saojoaodopiaui</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/saojoaodopiaui-pi-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_pi_saojoaodopiaui_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/riodejaneiro-rj-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rj_riodejaneiro</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/riodejaneiro-rj-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_rj_riodejaneiro_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+
+<local-tx-datasource>
+                <jndi-name>jdbc/treinamento-sigeduc</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_educ21_treinamento</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+<local-tx-datasource>
+                <jndi-name>jdbc/treinamento-comumdb</jndi-name>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_educ21_treinamento_comum</connection-url>
+                <user-name>sigeduc</user-name>
+                <password>sigeduc</password>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+    </local-tx-datasource>
+	<xa-datasource>
+                <jndi-name>jdbc/InstituicoesDB</jndi-name>
+                <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+                <xa-datasource-property name="ServerName">desenvolvimento-sigeduc.esig.com.br</xa-datasource-property>
+                <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+                <xa-datasource-property name="DatabaseName">portalsigeduc_desenv_instituicoes</xa-datasource-property>
+                <xa-datasource-property name="User">sigeduc</xa-datasource-property>
+                <xa-datasource-property name="Password">sigeduc</xa-datasource-property>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+        </xa-datasource>
+
+	<xa-datasource>
+		<jndi-name>jdbc/ComumDB</jndi-name>
+		<xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+		<xa-datasource-property name="ServerName">desenvolvimento-sigeduc.esig.com.br</xa-datasource-property>
+		<xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+		<xa-datasource-property name="DatabaseName">portalsigeduc_desenv_ref_comum</xa-datasource-property>
+		<xa-datasource-property name="User">comum_user</xa-datasource-property>
+		<xa-datasource-property name="Password">comum_user</xa-datasource-property>
+		<track-connection-by-tx/>
+		<min-pool-size>1</min-pool-size>
+		<max-pool-size>10</max-pool-size>
+		<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	</xa-datasource>
+
+	<!--
+	<xa-datasource>
+		<jndi-name>jdbc/SIPACDB</jndi-name>
+		<xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+		<xa-datasource-property name="ServerName">localhost</xa-datasource-property>
+		<xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+		<xa-datasource-property name="DatabaseName">seec_sistemas_comum</xa-datasource-property>
+		<xa-datasource-property name="User">comum_user</xa-datasource-property>
+		<xa-datasource-property name="Password">comum_user</xa-datasource-property>
+		<track-connection-by-tx/>
+		<min-pool-size>1</min-pool-size>
+		<max-pool-size>1</max-pool-size>
+		<check-valid-connection-sql>select 1</check-valid-connection-sql>
+	</xa-datasource>
+	-->
+
+        <local-tx-datasource>
+                <jndi-name>jdbc/LogOperacaoDB</jndi-name>
+                <connection-url>jdbc:postgresql://desenvolvimento-sigeduc.esig.com.br:5432/portalsigeduc_desenv_ref_log</connection-url>
+                <driver-class>org.postgresql.Driver</driver-class>
+                <user-name>sistemas_log</user-name>
+                <password>sistemas_log</password>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <blocking-timeout-millis>5000</blocking-timeout-millis>
+                <idle-timeout-minutes>1</idle-timeout-minutes>
+        </local-tx-datasource>
+
+	
+        <xa-datasource>
+                <jndi-name>jdbc/ArquivosDB</jndi-name>
+                <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+
+                <xa-datasource-property name="ServerName">desenvolvimento-sigeduc.esig.com.br</xa-datasource-property>
+
+                <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+                <xa-datasource-property name="DatabaseName">portalsigeduc_desenv_ref_arquivos</xa-datasource-property>
+                <xa-datasource-property name="User">arquivos</xa-datasource-property>
+                <xa-datasource-property name="Password">arquivos</xa-datasource-property>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+        </xa-datasource>
+
+        <xa-datasource>
+                <jndi-name>jdbc/ArquivosNode1</jndi-name>
+                <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+                <xa-datasource-property name="ServerName">desenvolvimento-sigeduc.esig.com.br</xa-datasource-property>
+                <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+                <xa-datasource-property name="DatabaseName">portalsigeduc_desenv_ref_arquivos</xa-datasource-property>
+                <xa-datasource-property name="User">arquivos</xa-datasource-property>
+                <xa-datasource-property name="Password">arquivos</xa-datasource-property>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+        </xa-datasource>
+
+        <xa-datasource>
+                <jndi-name>jdbc/Arquivos</jndi-name>
+                <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+                <xa-datasource-property name="ServerName">desenvolvimento-sigeduc.esig.com.br</xa-datasource-property>
+                <xa-datasource-property name="PortNumber">5432</xa-datasource-property>
+                <xa-datasource-property name="DatabaseName">portalsigeduc_desenv_ref_arquivos</xa-datasource-property>
+                <xa-datasource-property name="User">arquivos</xa-datasource-property>
+                <xa-datasource-property name="Password">arquivos</xa-datasource-property>
+                <track-connection-by-tx/>
+                <min-pool-size>1</min-pool-size>
+                <max-pool-size>10</max-pool-size>
+                <check-valid-connection-sql>select 1</check-valid-connection-sql>
+        </xa-datasource>
+
+</datasources>
